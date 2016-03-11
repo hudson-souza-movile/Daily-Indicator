@@ -1,0 +1,342 @@
+/* -------------------------------------------------------------------------
+
+ Apps Daily Indicator 2016
+ © Movile Company
+ Original Repo: https://github.com/tiago-cardoso-movile/Daily-Indicator
+ Created by: Tiago Cardoso - twitter: @elcardoson
+ License: MIT
+
+---------------------------------------------------------------------------- */
+@font-face {
+  font-family: "Proxima Nova Soft";
+  src: url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.eot");
+  src: url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.eot?#iefix") format("embedded-opentype"), url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.woff2") format("woff2"), url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.woff") format("woff"), url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.ttf") format("truetype"), url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.svg#svgFontName") format("svg");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Soft";
+  src: url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.eot");
+  src: url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.eot?#iefix") format("embedded-opentype"), url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.woff2") format("woff2"), url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.woff") format("woff"), url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.ttf") format("truetype"), url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.svg#svgFontName") format("svg");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Proxima Nova Soft";
+  src: url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.eot");
+  src: url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.eot?#iefix") format("embedded-opentype"), url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.woff2") format("woff2"), url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.woff") format("woff"), url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.ttf") format("truetype"), url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.svg#svgFontName") format("svg");
+  font-weight: 700;
+}
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+/* -------------------------------------
+    PADDINGS
+------------------------------------- */
+/* -------------------------------------
+    GLOBAL TEXT COLORS
+------------------------------------- */
+/* -------------------------------------
+    TYPOGRAPHY SETUP
+------------------------------------- */
+/*@table-cell-padding:            8px;
+//** Padding for cells in `.table-condensed`.
+@table-condensed-cell-padding:  5px;
+
+//** Default background color used for all tables.
+@table-bg:                      transparent;
+//** Background color used for `.table-striped`.
+@table-bg-accent:               #f9f9f9;
+//** Background color used for `.table-hover`.
+@table-bg-hover:                #F2F5F7;
+@table-bg-active:               @table-bg-hover;
+
+//** Border color for table and cell borders.
+@table-border-color:            #D2D5D9;
+
+
+//** Spacing line height for tables and cells
+@line-height-tables: 			3.128571429; // 20/35*/
+/* -------------------------------------
+    GLOBAL
+    A very basic CSS reset
+------------------------------------- */
+* {
+  margin: 0;
+  font-family: "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+img {
+  max-width: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  width: 100% !important;
+  height: 100%;
+  line-height: 1.6em;
+  /* 1.6em * 14px = 22.4px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
+  /*line-height: 22px;*/
+}
+/* Let's make sure all tables have defaults */
+table td {
+  vertical-align: top;
+}
+/* -------------------------------------
+    BODY & CONTAINER
+------------------------------------- */
+body {
+  background-color: #f6f6f6;
+}
+.body-wrap {
+  background-color: #orange;
+  width: 100%;
+}
+.container {
+  display: block !important;
+  max-width: 620px !important;
+  margin: 0 auto !important;
+  /* makes it centered */
+  clear: both !important;
+}
+.content {
+  max-width: 620px;
+  margin: 0 auto;
+  display: block;
+  padding: 20px;
+}
+.main {
+  background-color: #FFFFFF;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+.content-wrap {
+  padding: 20px;
+}
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1,
+h2,
+h3 {
+  font-family: "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+  color: #f52b84;
+  line-height: 1.1;
+  margin-bottom: 4px;
+}
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  /* 1.2em * 32px = 38.4px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
+  /*line-height: 38px;*/
+}
+h2 {
+  font-size: 14px;
+  font-weight: 600;
+  /* 1.2em * 24px = 28.8px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
+  /*line-height: 29px;*/
+}
+h3 {
+  font-size: 14px;
+  font-weight: normal;
+  /* 1.2em * 18px = 21.6px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
+  /*line-height: 22px;*/
+}
+p,
+ul,
+ol {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+p li,
+ul li,
+ol li {
+  margin-left: 5px;
+  list-style-position: inside;
+}
+/* -------------------------------------
+    LINKS & BUTTONS
+------------------------------------- */
+a {
+  color: #348eda;
+  text-decoration: underline;
+}
+.btn-primary {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #348eda;
+  border: solid #348eda;
+  border-width: 10px 20px;
+  line-height: 2em;
+  /* 2em * 14px = 28px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
+  /*line-height: 28px;*/
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+/* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+@media only screen and (max-width: 640px) {
+  body {
+    padding: 0 !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 800 !important;
+    margin: 20px 0 5px !important;
+  }
+  h1 {
+    font-size: 22px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  .container {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .content {
+    padding: 0 !important;
+  }
+  .content-wrap {
+    padding: 10px !important;
+  }
+  .invoice {
+    width: 100% !important;
+  }
+}
+/* -------------------------------------
+    INVOICE
+    Styles for the billing table
+------------------------------------- */
+.invoice {
+  margin: 40px auto;
+  text-align: left;
+  width: 80%;
+}
+.invoice td {
+  padding: 5px 0;
+}
+.invoice .invoice-items {
+  width: 100%;
+}
+.invoice .invoice-items td {
+  border-top: #eee 1px solid;
+}
+.invoice .invoice-items .total td {
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+  font-weight: 700;
+}
+/* -------------------------------------
+    HEADER MAIN
+------------------------------------- */
+.content-header {
+  background-color: #FFFFFF !important;
+  padding: 30px 20px 10px 20px !important;
+  border-top: solid 3px #3a536a;
+}
+img.logo {
+  float: right;
+  margin-top: 13px;
+  margin-right: 5px;
+}
+.go-movile {
+  font-weight: 700;
+}
+.date {
+  font-size: 13px;
+}
+/* -------------------------------------
+    HEADER, FOOTER, MAIN
+------------------------------------- */
+.main {
+  background-color: #FFFFFF;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+.content-wrap {
+  padding: 20px;
+}
+.header-global {
+  padding: 20px;
+  border-bottom: solid 1px blue;
+  background-color: yellow;
+}
+.content-block {
+  padding: 0 0 20px;
+  background-color: red;
+}
+.header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.footer {
+  width: 100%;
+  clear: both;
+  color: #999;
+  padding: 20px;
+}
+.footer p,
+.footer a,
+.footer td {
+  color: #999;
+  font-size: 12px;
+}
+/* -------------------------------------
+    OTHER STYLES THAT MIGHT BE USEFUL
+------------------------------------- */
+.last {
+  margin-bottom: 0;
+}
+.first {
+  margin-top: 0;
+}
+.aligncenter {
+  text-align: center;
+}
+.alignright {
+  text-align: right;
+}
+.alignleft {
+  text-align: left;
+}
+.clear {
+  clear: both;
+}
+/* -------------------------------------
+    ALERTS
+    Change the class depending on warning email, good email or bad email
+------------------------------------- */
+.alert {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  padding: 20px;
+  text-align: center;
+  border-radius: 3px 3px 0 0;
+}
+.alert a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+.alert.alert-warning {
+  background-color: #FF9F00;
+}
+.alert.alert-bad {
+  background-color: #D0021B;
+}
+.alert.alert-good {
+  background-color: #68B90F;
+}
+/*# sourceMappingURL=styles.css.map */

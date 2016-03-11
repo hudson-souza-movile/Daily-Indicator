@@ -1,0 +1,51 @@
+{
+  "name": "daily-indicator",
+  "version": "1.0.0",
+  "description": "Redesign Apps Daily Indicator",
+  "main": "index.js",
+  "dependencies": {
+    "browserify": "^13.0.0",
+    "concat": "^1.0.0",
+    "connect-livereload": "^0.5.4",
+    "imagemin": "^4.0.0",
+    "livereload-js": "^2.2.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^3.1.0",
+    "gulp-connect-multi": "^1.0.8",
+    "gulp-embedlr": "^0.5.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-refresh": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-stylus": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-webserver": "^0.9.1",
+    "jshint": "^2.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiago-cardoso-movile/Daily-Indicator.git"
+  },
+  "keywords": [
+    "email",
+    "apps",
+    "data",
+    "movile"
+  ],
+  "author": "IT Platform Smartphone & BI Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiago-cardoso-movile/Daily-Indicator/issues"
+  },
+  "homepage": "https://github.com/tiago-cardoso-movile/Daily-Indicator#readme"
+}

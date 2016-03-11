@@ -1,0 +1,583 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"stati",
+				"staticFiles"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"livere",
+				"livereload"
+			],
+			[
+				"ba",
+				"background-image"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "less/variables.less",
+			"settings":
+			{
+				"buffer_size": 3641,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/* -------------------------------------------------------------------------\n\n Apps Daily Indicator 2016\n © Movile Company\n Original Repo: https://github.com/tiago-cardoso-movile/Daily-Indicator\n Created by: Tiago Cardoso - twitter: @elcardoson\n License: MIT\n\n---------------------------------------------------------------------------- */\n\n\n//Includes\n\n@import \"variables.less\";\n@import \"general-structure.less\";\n@import \"body-container.less\";\n@import \"typography.less\";\n@import \"links-buttons.less\";\n@import \"responsive-mobile.less\";\n@import \"tables.less\";\n\n\n/* -------------------------------------\n    HEADER, FOOTER, MAIN\n------------------------------------- */\n.main {\n  background-color: @container-color;\n  border: 1px solid red;\n  border-radius: 3px;\n}\n\n.content-wrap {\n  padding: @padding-default;\n}\n\n.content-header {\n  background-color: @container-color !important;  \n  padding: @padding-default !important;\n}\n\nimg.logo{\nfloat: right;\n\n}\n.line-divides {\n  width: 582px;\n  height: 3px;\n  border: solid 1px @grey;\n}\n\n.header-global{\n  padding:20px;\n  border-bottom: solid 1px blue;\n  background-color: yellow;\n}\n\n.content-block {\n  padding: 0 0 20px;\n  background-color: red;\n}\n\n\n.header {\n  width: 100%;\n  margin-bottom: 20px;\n}\n\n.footer {\n  width: 100%;\n  clear: both;\n  color: #999;\n  padding: 20px;\n}\n.footer p, .footer a, .footer td {\n  color: #999;\n  font-size: 12px;\n}\n\n\n\n/* -------------------------------------\n    OTHER STYLES THAT MIGHT BE USEFUL\n------------------------------------- */\n.last {\n  margin-bottom: 0;\n}\n\n.first {\n  margin-top: 0;\n}\n\n.aligncenter {\n  text-align: center;\n}\n\n.alignright {\n  text-align: right;\n}\n\n.alignleft {\n  text-align: left;\n}\n\n.clear {\n  clear: both;\n}\n\n/* -------------------------------------\n    ALERTS\n    Change the class depending on warning email, good email or bad email\n------------------------------------- */\n.alert {\n  font-size: 16px;\n  color: #fff;\n  font-weight: 500;\n  padding: 20px;\n  text-align: center;\n  border-radius: 3px 3px 0 0;\n}\n.alert a {\n  color: #fff;\n  text-decoration: none;\n  font-weight: 500;\n  font-size: 16px;\n}\n.alert.alert-warning {\n  background-color: #FF9F00;\n}\n.alert.alert-bad {\n  background-color: #D0021B;\n}\n.alert.alert-good {\n  background-color: #68B90F;\n}\n\n\n\n\n/*# sourceMappingURL=styles.css.map */\n",
+			"file": "less/styles.less",
+			"file_size": 2356,
+			"file_write_time": 1457730225000000,
+			"settings":
+			{
+				"buffer_size": 2301,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 6966,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/body-container.less",
+			"settings":
+			{
+				"buffer_size": 493,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/typography.less",
+			"settings":
+			{
+				"buffer_size": 1063,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "less/links-buttons.less",
+			"settings":
+			{
+				"buffer_size": 604,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-variables.less",
+			"settings":
+			{
+				"buffer_size": 10526,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/elcardoson/Movile/kiwi-manager-ui/less/kiwi-adm-theme.less",
+			"settings":
+			{
+				"buffer_size": 9244,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 933,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"les",
+				"Set Syntax: LESS"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"instap",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/elcardoson/Movile/Daily-Indicator/less/global-config.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/responsive-mobile.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/styles/kiwi-adm-theme.css",
+		"/Users/elcardoson/Movile/Email-Marketing-Kiwi/teste-daily-indicator.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/general-structure.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/styles/styles.css",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kiwi-adm-theme.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-footer.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-fonts.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/typography.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/fonts.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/body-container.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/gulpfile.js",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/tables.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/styles/fonts.css",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/gulpfile.js",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/appdi-styles.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/package.json",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/appdi-styles",
+		"/Users/elcardoson/Library/Application Support/Sublime Text 2/Packages/LESS/README.md",
+		"/Users/elcardoson/Library/Application Support/Sublime Text 2/Packages/User/LESS.sublime-settings",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/index.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/node_modules/less/dist/less.js",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/less/styles.less.css",
+		"/Users/elcardoson/Movile/Daily-Indicator/views/index.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/styles/styles.css",
+		"/Users/elcardoson/Movile/Daily-Indicator/gulpfile-express.js",
+		"/Users/elcardoson/Movile/Daily-Indicator/src/index.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/src/apps-daily-indicator-ranking.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/src/daily-indicator-ranking.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/scripts/static.js",
+		"/Users/elcardoson/Github-Plugins/transactional-email-templates/README.md",
+		"/Users/elcardoson/Movile/Daily-Indicator/src/README.md",
+		"/Users/elcardoson/Github-Plugins/transactional-email-templates/templates/billing.html",
+		"/Users/elcardoson/Github-Plugins/transactional-email-templates/templates/inlined/billing.html",
+		"/Users/elcardoson/Movile/Style-Guide-Kiwi/README.md",
+		"/Users/elcardoson/Movile/Prototype/push/index.html",
+		"/Users/elcardoson/.bash_profile"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"url-font-path",
+			"url-server-assets",
+			"url-font-path",
+			"url",
+			"kw",
+			"lrport",
+			"imagemin",
+			"connect",
+			"plugins",
+			"staticFiles",
+			"root"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"url-server-fonts",
+			"url-server-assets"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "less/variables.less",
+					"settings":
+					{
+						"buffer_size": 3641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								393,
+								393
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "less/styles.less",
+					"settings":
+					{
+						"buffer_size": 2301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								922,
+								922
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 209.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/index.html",
+					"settings":
+					{
+						"buffer_size": 6966,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								882,
+								882
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "less/body-container.less",
+					"settings":
+					{
+						"buffer_size": 493,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								493,
+								493
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "less/typography.less",
+					"settings":
+					{
+						"buffer_size": 1063,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								709,
+								709
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "less/links-buttons.less",
+					"settings":
+					{
+						"buffer_size": 604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								604,
+								604
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-variables.less",
+					"settings":
+					{
+						"buffer_size": 10526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								729,
+								729
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/Users/elcardoson/Movile/kiwi-manager-ui/less/kiwi-adm-theme.less",
+					"settings":
+					{
+						"buffer_size": 9244,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "gulpfile.js",
+					"settings":
+					{
+						"buffer_size": 933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								864,
+								860
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.894378582595,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"less",
+				"node_modules/less/dist/less.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 211.0,
+	"status_bar_visible": true
+}

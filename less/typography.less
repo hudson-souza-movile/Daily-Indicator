@@ -1,0 +1,40 @@
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1, h2, h3 {
+  font-family: @font-family-base;
+  color: @red-pink;
+  //margin: 40px 0 0;
+  line-height: @headings-line-height;
+  margin-bottom: @padding-headlines;
+}
+
+h1 {
+  font-size: @font-size-h1;
+  font-weight: @font-semi-bold-weight;
+  /* 1.2em * 32px = 38.4px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
+  /*line-height: 38px;*/
+}
+
+h2 {
+  font-size: @font-size-h2;
+  font-weight: @font-semi-bold-weight;
+  /* 1.2em * 24px = 28.8px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
+  /*line-height: 29px;*/
+}
+
+h3 {
+  font-size: @font-size-h3;
+  font-weight: @font-regular-weight;
+  /* 1.2em * 18px = 21.6px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
+  /*line-height: 22px;*/
+}
+
+p, ul, ol {
+  margin-bottom: 10px;
+  font-weight: @font-regular-weight;
+}
+p li, ul li, ol li {
+  margin-left: 5px;
+  list-style-position: inside;
+}
