@@ -137,9 +137,15 @@ h2 {
 }
 h3 {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 700;
+  color: #3a536a;
   /* 1.2em * 18px = 21.6px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
   /*line-height: 22px;*/
+}
+h4 {
+  font-size: 13px;
+  color: #3a536a;
+  font-weight: normal;
 }
 p,
 ul,
@@ -217,24 +223,16 @@ a {
     INVOICE
     Styles for the billing table
 ------------------------------------- */
-.invoice {
-  margin: 40px auto;
-  text-align: left;
-  width: 80%;
-}
-.invoice td {
-  padding: 5px 0;
-}
-.invoice .invoice-items {
+table.table-ranking {
   width: 100%;
+  margin: 0px;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-.invoice .invoice-items td {
-  border-top: #eee 1px solid;
-}
-.invoice .invoice-items .total td {
-  border-top: 2px solid #333;
-  border-bottom: 2px solid #333;
-  font-weight: 700;
+.tr-ranking {
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
 }
 /* -------------------------------------
     HEADER MAIN
@@ -246,38 +244,46 @@ a {
 }
 img.logo {
   float: right;
-  margin-top: 13px;
+  margin-top: 8px;
   margin-right: 5px;
 }
 .go-movile {
   font-weight: 700;
 }
 .date {
-  font-size: 13px;
+  font-size: 14px;
 }
 /* -------------------------------------
-    HEADER, FOOTER, MAIN
+    HEADER GLOBAL PIE CHARTS
 ------------------------------------- */
-.main {
-  background-color: #FFFFFF;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-}
-.content-wrap {
-  padding: 20px;
-}
 .header-global {
-  padding: 20px;
-  border-bottom: solid 1px blue;
-  background-color: yellow;
+  padding: 20px 20px 10px 20px;
 }
-.content-block {
-  padding: 0 0 20px;
-  background-color: red;
+.header-global h4 {
+  padding: 0px;
+  margin-top: -5px;
+  margin-bottom: 6px;
 }
+.header-global span {
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  display: block;
+  border-bottom: 3px solid #3a536a;
+}
+.header-global hr {
+  color: #3a536a !important;
+}
+/* -------------------------------------
+    GLOBAL HEADER, FOOTER, MAIN
+------------------------------------- */
 .header {
   width: 100%;
   margin-bottom: 20px;
+}
+.content-block {
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 .footer {
   width: 100%;
