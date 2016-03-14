@@ -1,18 +1,110 @@
 /* -------------------------------------
-    INVOICE
-    Styles for the billing table
+    TABLES
+    Styles for the tables
 ------------------------------------- */
 
-table.table-ranking{
-    width: 100%;
-    margin:0px;
-    padding:0;
-    border-collapse: collapse;
-    border-spacing: 0;
+
+
+/* -------------------------------------
+    TABLES RANKING
+------------------------------------- */
+
+table.ranking-tables th,
+table.ranking-tables td{
+  text-align: left;
+}
+table.ranking-tables th.align-right{
+  text-align: right;
+}
+table.ranking-tables td.align-right{
+  text-align: right;
 }
 
-  .tr-ranking {
-    border-bottom: 1px solid #ddd;
-    padding: 5px;
+table.layout{
+  width: 100%;
+  border-collapse: collapse;
+}
+table.display{
+  margin: 1em 0;
+
+}
+table.display th,
+table.display td{
+  //border: 1px solid #B3BFAA;
+  border-bottom: 1px solid @grey;
+  padding: .5em .5em;
+}
+
+table.display th{ background: @gray-light; }
+table.display td{ background: @container-color; }
+
+table.responsive-table{
+ // box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+table.ranking-tables .pd-rkng{
+  padding-top: 30px;
+}
+
+///*
+@media (max-width: 30em){
+    table.responsive-table{
+      box-shadow: none;  
+    }
+    table.responsive-table thead{
+      display: none; 
+    }
+  table.display th,
+  table.display td{
+    padding: .5em;
+  }
+    
+  table.responsive-table td:nth-child(1):before{
+    content: 'Position';
+  }
+  table.responsive-table td:nth-child(2):before{
+    content: 'App Name';
+  }
+  table.responsive-table td:nth-child(3):before{
+    content: 'Total Monthly';
   }
 
+  table.responsive-table td:nth-child(1),
+  table.responsive-table td:nth-child(2),
+  table.responsive-table td:nth-child(3){
+    padding-left: 25%;
+    text-align: right;
+  }
+  table.responsive-table td:nth-child(1):before,
+  table.responsive-table td:nth-child(2):before,
+  table.responsive-table td:nth-child(3):before{
+    position: absolute;
+    left: .5em;
+    font-weight: bold;
+  }
+  
+    table.responsive-table tr,
+    table.responsive-table td{
+        display: block;
+    }
+    table.responsive-table tr{
+        position: relative;
+        margin-bottom: 1em;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    }
+    table.responsive-table td{
+        border-top: none;
+    }
+    table.responsive-table td.organization-position{
+        background: @gray-light;
+        border-top: 1px solid @grey;
+    }
+    table.responsive-table td.value-data-dis{
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: none;
+        background: none;
+    }
+}
+//*/

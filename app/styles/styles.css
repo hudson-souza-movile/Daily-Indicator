@@ -78,8 +78,13 @@ body {
   /*line-height: 22px;*/
 }
 /* Let's make sure all tables have defaults */
-table td {
-  vertical-align: top;
+b {
+  font-weight: 700;
+  font-size: 11px;
+  color: #3a536a;
+}
+table td tr {
+  color: #3a536a;
 }
 /* -------------------------------------
     BODY & CONTAINER
@@ -88,7 +93,7 @@ body {
   background-color: #f6f6f6;
 }
 .body-wrap {
-  background-color: #orange;
+  background-color: #f6f6f6;
   width: 100%;
 }
 .container {
@@ -118,53 +123,54 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Proxima Nova Soft", Helvetica, Arial, sans-serif;
-  color: #f52b84;
-  line-height: 1.1;
-  margin-bottom: 4px;
+  font-family: "Proxima Nova Soft", Helvetica, Arial, sans-serif !important;
+  color: #f52b84 !important;
+  line-height: 1.1 !important;
+  margin-bottom: 4px !important;
 }
 h1 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 24px !important;
+  font-weight: 600 !important;
   /* 1.2em * 32px = 38.4px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
   /*line-height: 38px;*/
 }
 h2 {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 14px !important;
+  font-weight: 600 !important;
   /* 1.2em * 24px = 28.8px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
   /*line-height: 29px;*/
 }
 h3 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #3a536a;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #3a536a !important;
   /* 1.2em * 18px = 21.6px, use px to get airier line-height also in Thunderbird, and Yahoo!, Outlook.com, AOL webmail clients */
   /*line-height: 22px;*/
 }
 h4 {
-  font-size: 13px;
-  color: #3a536a;
-  font-weight: normal;
+  font-size: 13px !important;
+  color: #3a536a !important;
+  font-weight: normal !important;
 }
 p,
 ul,
 ol {
   margin-bottom: 10px;
-  font-weight: normal;
+  font-weight: normal !important;
 }
 p li,
 ul li,
 ol li {
-  margin-left: 5px;
-  list-style-position: inside;
+  margin-left: 5px !important;
+  list-style-position: inside !important;
 }
 /* -------------------------------------
     LINKS & BUTTONS
 ------------------------------------- */
 a {
-  color: #348eda;
-  text-decoration: underline;
+  color: #f52b84;
+  text-decoration: none;
+  font-weight: 700;
 }
 .btn-primary {
   text-decoration: none;
@@ -220,19 +226,99 @@ a {
   }
 }
 /* -------------------------------------
-    INVOICE
-    Styles for the billing table
+    TABLES
+    Styles for the tables
 ------------------------------------- */
-table.table-ranking {
-  width: 100%;
-  margin: 0px;
-  padding: 0;
-  border-collapse: collapse;
-  border-spacing: 0;
+/* -------------------------------------
+    TABLES RANKING
+------------------------------------- */
+table.ranking-tables th,
+table.ranking-tables td {
+  text-align: left;
 }
-.tr-ranking {
-  border-bottom: 1px solid #ddd;
-  padding: 5px;
+table.ranking-tables th.align-right {
+  text-align: right;
+}
+table.ranking-tables td.align-right {
+  text-align: right;
+}
+table.layout {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.display {
+  margin: 1em 0;
+}
+table.display th,
+table.display td {
+  border-bottom: 1px solid #e6e6e6;
+  padding: .5em .5em;
+}
+table.display th {
+  background: #f6f6f6;
+}
+table.display td {
+  background: #FFFFFF;
+}
+table.ranking-tables .pd-rkng {
+  padding-top: 30px;
+}
+@media (max-width: 30em) {
+  table.responsive-table {
+    box-shadow: none;
+  }
+  table.responsive-table thead {
+    display: none;
+  }
+  table.display th,
+  table.display td {
+    padding: .5em;
+  }
+  table.responsive-table td:nth-child(1):before {
+    content: 'Position';
+  }
+  table.responsive-table td:nth-child(2):before {
+    content: 'App Name';
+  }
+  table.responsive-table td:nth-child(3):before {
+    content: 'Total Monthly';
+  }
+  table.responsive-table td:nth-child(1),
+  table.responsive-table td:nth-child(2),
+  table.responsive-table td:nth-child(3) {
+    padding-left: 25%;
+    text-align: right;
+  }
+  table.responsive-table td:nth-child(1):before,
+  table.responsive-table td:nth-child(2):before,
+  table.responsive-table td:nth-child(3):before {
+    position: absolute;
+    left: .5em;
+    font-weight: bold;
+  }
+  table.responsive-table tr,
+  table.responsive-table td {
+    display: block;
+  }
+  table.responsive-table tr {
+    position: relative;
+    margin-bottom: 1em;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  }
+  table.responsive-table td {
+    border-top: none;
+  }
+  table.responsive-table td.organization-position {
+    background: #f6f6f6;
+    border-top: 1px solid #e6e6e6;
+  }
+  table.responsive-table td.value-data-dis {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background: none;
+  }
 }
 /* -------------------------------------
     HEADER MAIN
@@ -240,39 +326,97 @@ table.table-ranking {
 .content-header {
   background-color: #FFFFFF !important;
   padding: 30px 20px 10px 20px !important;
-  border-top: solid 3px #3a536a;
+  border-top: solid 3px #3a536a !important;
 }
 img.logo {
-  float: right;
-  margin-top: 8px;
-  margin-right: 5px;
+  float: right !important;
+  margin-top: 8px !important;
+  margin-right: 5px !important;
 }
 .go-movile {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 .date {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 /* -------------------------------------
     HEADER GLOBAL PIE CHARTS
 ------------------------------------- */
-.header-global {
+.titles-daily-indicator {
   padding: 20px 20px 10px 20px;
 }
-.header-global h4 {
+.titles-daily-indicator h4 {
   padding: 0px;
   margin-top: -5px;
   margin-bottom: 6px;
 }
-.header-global span {
+.titles-daily-indicator span {
   padding: 0;
   margin: 0;
   width: 20px;
   display: block;
   border-bottom: 3px solid #3a536a;
 }
-.header-global hr {
+.titles-daily-indicator hr {
   color: #3a536a !important;
+}
+.global-indicators {
+  padding: 20px 20px 10px 20px !important;
+}
+.global-indicators tr td {
+  border: none;
+}
+.global-indicators h1 {
+  color: #3a536a;
+  font-weight: 700;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.global-indicators p {
+  font-size: 16px !important;
+  color: #3a536a !important;
+  font-weight: 700 !important;
+  margin-bottom: 0px !important;
+  text-align: right !important;
+}
+.global-indicators .title-charts {
+  text-align: left !important;
+}
+.global-indicators span {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  float: right;
+}
+.ico-arrow {
+  vertical-align: middle;
+  padding-left: 4px !important;
+}
+.set-growth {
+  color: #04cc53;
+}
+.set-decay {
+  color: #f37870;
+}
+.in-app {
+  float: right;
+}
+.new-installs {
+  float: left;
+}
+/* -------------------------------------
+    FOOTER
+------------------------------------- */
+.content-footer {
+  font-size: 11px !important;
+  line-height: 15px;
+  text-align: center;
+  padding: 5px 20px 5px 20px !important;
+  color: #939393;
+}
+.content-footer img {
+  padding-bottom: 30px;
 }
 /* -------------------------------------
     GLOBAL HEADER, FOOTER, MAIN
@@ -283,7 +427,7 @@ img.logo {
 }
 .content-block {
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #FFFFFF;
 }
 .footer {
   width: 100%;
@@ -296,53 +440,5 @@ img.logo {
 .footer td {
   color: #999;
   font-size: 12px;
-}
-/* -------------------------------------
-    OTHER STYLES THAT MIGHT BE USEFUL
-------------------------------------- */
-.last {
-  margin-bottom: 0;
-}
-.first {
-  margin-top: 0;
-}
-.aligncenter {
-  text-align: center;
-}
-.alignright {
-  text-align: right;
-}
-.alignleft {
-  text-align: left;
-}
-.clear {
-  clear: both;
-}
-/* -------------------------------------
-    ALERTS
-    Change the class depending on warning email, good email or bad email
-------------------------------------- */
-.alert {
-  font-size: 16px;
-  color: #fff;
-  font-weight: 500;
-  padding: 20px;
-  text-align: center;
-  border-radius: 3px 3px 0 0;
-}
-.alert a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-}
-.alert.alert-warning {
-  background-color: #FF9F00;
-}
-.alert.alert-bad {
-  background-color: #D0021B;
-}
-.alert.alert-good {
-  background-color: #68B90F;
 }
 /*# sourceMappingURL=styles.css.map */

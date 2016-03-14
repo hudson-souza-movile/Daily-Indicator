@@ -20,6 +20,7 @@
 @import "tables.less";
 @import "main-header.less";
 @import "global-header-charts.less";
+@import "footer.less";
 
 /* -------------------------------------
     GLOBAL HEADER, FOOTER, MAIN
@@ -33,7 +34,7 @@
 
 .content-block {
   padding: @padding-default;
-  background-color: #f9f9f9;
+  background-color: @container-color;
 }
 
 
@@ -48,63 +49,6 @@
   font-size: 12px;
 }
 
-
-
-
-/* -------------------------------------
-    OTHER STYLES THAT MIGHT BE USEFUL
-------------------------------------- */
-.last {
-  margin-bottom: 0;
-}
-
-.first {
-  margin-top: 0;
-}
-
-.aligncenter {
-  text-align: center;
-}
-
-.alignright {
-  text-align: right;
-}
-
-.alignleft {
-  text-align: left;
-}
-
-.clear {
-  clear: both;
-}
-
-/* -------------------------------------
-    ALERTS
-    Change the class depending on warning email, good email or bad email
-------------------------------------- */
-.alert {
-  font-size: 16px;
-  color: #fff;
-  font-weight: 500;
-  padding: 20px;
-  text-align: center;
-  border-radius: 3px 3px 0 0;
-}
-.alert a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-}
-.alert.alert-warning {
-  background-color: #FF9F00;
-}
-.alert.alert-bad {
-  background-color: #D0021B;
-}
-.alert.alert-good {
-  background-color: #68B90F;
-}
 
 
 

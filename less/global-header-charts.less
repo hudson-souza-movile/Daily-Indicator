@@ -3,17 +3,18 @@
     HEADER GLOBAL PIE CHARTS
 ------------------------------------- */
 
-.header-global{
+.titles-daily-indicator{
   padding:20px 20px 10px 20px;
+  //order: solid 1px;
 }
 
-.header-global h4{
+.titles-daily-indicator h4{
 	padding: 0px;
 	margin-top: -5px;
 	margin-bottom: 6px;
 }
 
-.header-global span{
+.titles-daily-indicator span{
 	padding:0;
 	margin: 0;
 	width: 20px;
@@ -21,6 +22,77 @@
 	border-bottom: 3px solid @dark-grey-blue;
 }
 
-.header-global hr{
+.titles-daily-indicator hr{
 	color: @dark-grey-blue !important; 
 }
+
+
+// CUSTOM TABLE FOR RECEIVE CHARTS
+
+
+.global-indicators{
+	padding:20px 20px 10px 20px !important;
+	//border-collapse: collapse;
+}
+
+.global-indicators tr td{
+	//border: solid 1px;
+	border: none;
+}
+
+.global-indicators h1{
+	color: @dark-grey-blue;
+	font-weight: @font-bold-weight;
+	text-align: left;
+	padding: 0;
+	margin:0;
+}
+
+.global-indicators p{
+	font-size: @font-size-medium !important;
+	color: @dark-grey-blue !important;
+	font-weight: @font-bold-weight !important;
+	margin-bottom: 0px !important;
+	text-align: right !important;
+}
+
+.global-indicators .title-charts{
+	text-align: left !important;
+}
+
+.global-indicators span{
+	text-align: right;
+	font-size: @font-size-medium;
+	font-weight: @font-bold-weight;
+	float: right;
+}
+.ico-arrow{
+	vertical-align: middle;
+	padding-left: 4px !important; 
+}
+
+.set-growth{
+	color: @good-up-green;
+}
+.set-decay{
+	color: @not-good-red;
+}
+
+.in-app{
+	float: right;
+}
+.new-installs{
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
