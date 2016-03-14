@@ -15,6 +15,7 @@ table.ranking-tables td{
 }
 table.ranking-tables th.align-right{
   text-align: right;
+
 }
 table.ranking-tables td.align-right{
   text-align: right;
@@ -31,20 +32,30 @@ table.display{
 table.display th,
 table.display td{
   //border: 1px solid #B3BFAA;
-  border-bottom: 1px solid @grey;
-  padding: .5em .5em;
+  //border-bottom: 1px solid @grey;
+  padding: .8em .5em;
 }
 
-table.display th{ background: @gray-light; }
-table.display td{ background: @container-color; }
+//table.display th{ background: @gray-light; }
+//table.display td{ background: @container-color; }
 
 table.responsive-table{
  // box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
 }
 
-table.ranking-tables .pd-rkng{
-  padding-top: 30px;
+table.pd-rkng{
+  margin-top: 35px !important;
 }
+
+table.responsive-table tbody tr:nth-child(odd) {
+  background: @gray-light;
+}
+
+table.responsive-table tbody tr.highlight{
+  //font-weight: @font-bold-weight;
+  color: @red-pink;
+}
+
 
 ///*
 @media (max-width: 30em){
@@ -66,7 +77,7 @@ table.ranking-tables .pd-rkng{
     content: 'App Name';
   }
   table.responsive-table td:nth-child(3):before{
-    content: 'Total Monthly';
+    content: 'Total';
   }
 
   table.responsive-table td:nth-child(1),
