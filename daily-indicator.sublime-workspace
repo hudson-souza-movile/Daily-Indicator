@@ -4,12 +4,60 @@
 		"selected_items":
 		[
 			[
-				"bor",
-				"border-top"
+				"font",
+				"font-weight"
+			],
+			[
+				"ba",
+				"background-color"
 			],
 			[
 				"mar",
-				"margin-top"
+				"margin"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"font-ze",
+				"font-size-medium"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"borde",
+				"border-collapse"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"ta",
+				"table-ranking"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"cont",
+				"content-header"
+			],
+			[
+				"FONT",
+				"font-size"
 			],
 			[
 				"stati",
@@ -26,99 +74,24 @@
 			[
 				"livere",
 				"livereload"
-			],
-			[
-				"ba",
-				"background-image"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "less/variables.less",
-			"settings":
-			{
-				"buffer_size": 3641,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "/* -------------------------------------------------------------------------\n\n Apps Daily Indicator 2016\n © Movile Company\n Original Repo: https://github.com/tiago-cardoso-movile/Daily-Indicator\n Created by: Tiago Cardoso - twitter: @elcardoson\n License: MIT\n\n---------------------------------------------------------------------------- */\n\n\n//Includes\n\n@import \"variables.less\";\n@import \"general-structure.less\";\n@import \"body-container.less\";\n@import \"typography.less\";\n@import \"links-buttons.less\";\n@import \"responsive-mobile.less\";\n@import \"tables.less\";\n\n\n/* -------------------------------------\n    HEADER, FOOTER, MAIN\n------------------------------------- */\n.main {\n  background-color: @container-color;\n  border: 1px solid red;\n  border-radius: 3px;\n}\n\n.content-wrap {\n  padding: @padding-default;\n}\n\n.content-header {\n  background-color: @container-color !important;  \n  padding: @padding-default !important;\n}\n\nimg.logo{\nfloat: right;\n\n}\n.line-divides {\n  width: 582px;\n  height: 3px;\n  border: solid 1px @grey;\n}\n\n.header-global{\n  padding:20px;\n  border-bottom: solid 1px blue;\n  background-color: yellow;\n}\n\n.content-block {\n  padding: 0 0 20px;\n  background-color: red;\n}\n\n\n.header {\n  width: 100%;\n  margin-bottom: 20px;\n}\n\n.footer {\n  width: 100%;\n  clear: both;\n  color: #999;\n  padding: 20px;\n}\n.footer p, .footer a, .footer td {\n  color: #999;\n  font-size: 12px;\n}\n\n\n\n/* -------------------------------------\n    OTHER STYLES THAT MIGHT BE USEFUL\n------------------------------------- */\n.last {\n  margin-bottom: 0;\n}\n\n.first {\n  margin-top: 0;\n}\n\n.aligncenter {\n  text-align: center;\n}\n\n.alignright {\n  text-align: right;\n}\n\n.alignleft {\n  text-align: left;\n}\n\n.clear {\n  clear: both;\n}\n\n/* -------------------------------------\n    ALERTS\n    Change the class depending on warning email, good email or bad email\n------------------------------------- */\n.alert {\n  font-size: 16px;\n  color: #fff;\n  font-weight: 500;\n  padding: 20px;\n  text-align: center;\n  border-radius: 3px 3px 0 0;\n}\n.alert a {\n  color: #fff;\n  text-decoration: none;\n  font-weight: 500;\n  font-size: 16px;\n}\n.alert.alert-warning {\n  background-color: #FF9F00;\n}\n.alert.alert-bad {\n  background-color: #D0021B;\n}\n.alert.alert-good {\n  background-color: #68B90F;\n}\n\n\n\n\n/*# sourceMappingURL=styles.css.map */\n",
-			"file": "less/styles.less",
-			"file_size": 2356,
-			"file_write_time": 1457730225000000,
-			"settings":
-			{
-				"buffer_size": 2301,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/index.html",
-			"settings":
-			{
-				"buffer_size": 6966,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "less/body-container.less",
-			"settings":
-			{
-				"buffer_size": 493,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "less/typography.less",
-			"settings":
-			{
-				"buffer_size": 1063,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "less/links-buttons.less",
-			"settings":
-			{
-				"buffer_size": 604,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-variables.less",
-			"settings":
-			{
-				"buffer_size": 10526,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/elcardoson/Movile/kiwi-manager-ui/less/kiwi-adm-theme.less",
-			"settings":
-			{
-				"buffer_size": 9244,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "gulpfile.js",
-			"settings":
-			{
-				"buffer_size": 933,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 87.0,
+		"height": 107.0,
 		"selected_items":
 		[
 			[
 				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
 				"Package Control: Install Package"
 			],
 			[
@@ -142,7 +115,7 @@
 				"About"
 			]
 		],
-		"width": 449.0
+		"width": 575.0
 	},
 	"console":
 	{
@@ -159,20 +132,29 @@
 	},
 	"file_history":
 	[
-		"/Users/elcardoson/Movile/Daily-Indicator/less/global-config.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/links-buttons.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/responsive-mobile.less",
-		"/Users/elcardoson/Movile/kiwi-manager-ui/app/styles/kiwi-adm-theme.css",
-		"/Users/elcardoson/Movile/Email-Marketing-Kiwi/teste-daily-indicator.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/variables.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/styles.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/footer.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/index.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/main-header.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/general-structure.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/app/styles/styles.css",
-		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kiwi-adm-theme.less",
-		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-footer.less",
-		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-fonts.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/tables.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/stats.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/typography.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/fonts.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/global-header-charts.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/body-container.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/gulpfile.js",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/tables.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kiwi-adm-theme.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-variables.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/global-config.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/styles/kiwi-adm-theme.css",
+		"/Users/elcardoson/Movile/Email-Marketing-Kiwi/teste-daily-indicator.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/styles/styles.css",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-footer.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-fonts.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/fonts.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/styles/fonts.css",
 		"/Users/elcardoson/Movile/kiwi-manager-ui/gulpfile.js",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/appdi-styles.less",
@@ -180,7 +162,6 @@
 		"/Users/elcardoson/Movile/Daily-Indicator/less/appdi-styles",
 		"/Users/elcardoson/Library/Application Support/Sublime Text 2/Packages/LESS/README.md",
 		"/Users/elcardoson/Library/Application Support/Sublime Text 2/Packages/User/LESS.sublime-settings",
-		"/Users/elcardoson/Movile/Daily-Indicator/app/index.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/node_modules/less/dist/less.js",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/less/styles.less.css",
 		"/Users/elcardoson/Movile/Daily-Indicator/views/index.html",
@@ -214,6 +195,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"t",
+			"valua-data-di",
+			"organisationname",
+			"organisationnumber",
+			"action",
+			"header-global",
+			"hr",
 			"url-font-path",
 			"url-server-assets",
 			"url-font-path",
@@ -232,6 +220,12 @@
 		"regex": false,
 		"replace_history":
 		[
+			"important",
+			"value-data-di",
+			"organization-name",
+			"organization-position",
+			"value-data-di",
+			"titles-daily-indicator",
 			"url-server-fonts",
 			"url-server-assets"
 		],
@@ -244,265 +238,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "less/variables.less",
-					"settings":
-					{
-						"buffer_size": 3641,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								393,
-								393
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/LESS/LESS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "less/styles.less",
-					"settings":
-					{
-						"buffer_size": 2301,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								922,
-								922
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 209.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/index.html",
-					"settings":
-					{
-						"buffer_size": 6966,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								882,
-								882
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "less/body-container.less",
-					"settings":
-					{
-						"buffer_size": 493,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								493,
-								493
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "less/typography.less",
-					"settings":
-					{
-						"buffer_size": 1063,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								709,
-								709
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "less/links-buttons.less",
-					"settings":
-					{
-						"buffer_size": 604,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								604,
-								604
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-variables.less",
-					"settings":
-					{
-						"buffer_size": 10526,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								729,
-								729
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/LESS/LESS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "/Users/elcardoson/Movile/kiwi-manager-ui/less/kiwi-adm-theme.less",
-					"settings":
-					{
-						"buffer_size": 9244,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/LESS/LESS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "gulpfile.js",
-					"settings":
-					{
-						"buffer_size": 933,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								864,
-								860
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai Bright.tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		},
 		{

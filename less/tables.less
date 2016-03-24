@@ -34,10 +34,9 @@ table.display td{
   //border: 1px solid #B3BFAA;
   //border-bottom: 1px solid @grey;
   padding: .8em .5em;
+
 }
 
-//table.display th{ background: @gray-light; }
-//table.display td{ background: @container-color; }
 
 table.responsive-table{
  // box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
@@ -58,41 +57,47 @@ table.responsive-table tbody tr.highlight{
 
 
 ///*
-@media (max-width: 30em){
+@media screen and (max-width: 30em){
+
     table.responsive-table{
       box-shadow: none;  
     }
-    table.responsive-table thead{
-      display: none; 
-    }
-  table.display th,
-  table.display td{
-    padding: .5em;
-  }
-    
-  table.responsive-table td:nth-child(1):before{
-    content: 'Position';
-  }
-  table.responsive-table td:nth-child(2):before{
-    content: 'App Name';
-  }
-  table.responsive-table td:nth-child(3):before{
-    content: 'Total';
-  }
 
-  table.responsive-table td:nth-child(1),
-  table.responsive-table td:nth-child(2),
-  table.responsive-table td:nth-child(3){
-    padding-left: 25%;
-    text-align: right;
-  }
-  table.responsive-table td:nth-child(1):before,
-  table.responsive-table td:nth-child(2):before,
-  table.responsive-table td:nth-child(3):before{
-    position: absolute;
-    left: .5em;
-    font-weight: bold;
-  }
+    table.responsive-table thead{
+      //display: none; 
+    }
+
+    table.ranking-tables th.resp-align{
+      display: none;
+    }
+  
+    table.display th,
+    table.display td{
+      padding: .5em;
+    }
+      
+    table.responsive-table td:nth-child(1):before{
+      content: 'Position';
+    }
+    table.responsive-table td:nth-child(2):before{
+      content: 'App Name';
+    }
+    table.responsive-table td:nth-child(3):before{
+      content: 'Total';
+    }
+
+    table.responsive-table td:nth-child(1),
+    table.responsive-table td:nth-child(2),
+    table.responsive-table td:nth-child(3){
+      padding-left: 25%;
+      text-align: right;
+    }
+    table.responsive-table td:nth-child(1):before,
+    table.responsive-table td:nth-child(2):before,
+    table.responsive-table td:nth-child(3):before{
+      position: absolute;
+      left: .5em;
+    }
   
     table.responsive-table tr,
     table.responsive-table td{
@@ -116,6 +121,9 @@ table.responsive-table tbody tr.highlight{
         right: 0;
         border: none;
         background: none;
+    }
+    table.responsive-table tbody tr:nth-child(odd) {
+      background-color: #FFFFFF !important;
     }
 }
 //*/
