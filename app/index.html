@@ -1,233 +1,355 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/xhtml" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
 <head>
 <meta name="viewport" content="width=device-width" />
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<meta http-equiv="cache-control" content="max-age=0"/>
-<meta http-equiv="cache-control" content="no-cache"/>
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="-1" />
 <title>Movile - Apps Daily Indicator</title>
-<link href="http://www.cardoso.cc/movile/styles.css" media="all" rel="stylesheet" type="text/css"/>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/EmailMessage">
+<body itemscope="" itemtype="http://schema.org/EmailMessage" style="-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; background: #f6f6f6; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; height: 100%; line-height: 1.6em; margin: 0; width: 100% !important" bgcolor="#f6f6f6"><style type="text/css">
+@font-face {
+font-family: "Proxima Nova Soft"; src: url('http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.eot?#iefix') format("embedded-opentype"), url('http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.woff2') format("woff2"), url('http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.woff') format("woff"), url('http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.ttf') format("truetype"), url('http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.svg#svgFontName') format("svg"); font-weight: normal;
+}
+@font-face {
+font-family: "Proxima Nova Soft"; src: url('http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.eot?#iefix') format("embedded-opentype"), url('http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.woff2') format("woff2"), url('http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.woff') format("woff"), url('http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.ttf') format("truetype"), url('http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.svg#svgFontName') format("svg"); font-weight: 600;
+}
+@font-face {
+font-family: "Proxima Nova Soft"; src: url('http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.eot?#iefix') format("embedded-opentype"), url('http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.woff2') format("woff2"), url('http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.woff') format("woff"), url('http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.ttf') format("truetype"), url('http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.svg#svgFontName') format("svg"); font-weight: 700;
+}
+img {
+max-width: 100%;
+}
+body {
+-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6em;
+}
+body {
+background-color: #f6f6f6;
+}
+@media screen and (max-width: 525px) {
+  body {
+    padding: 0 !important;
+  }
+  h1 {
+    font-weight: 800 !important; margin: 18px 0 5px !important;
+  }
+  h2 {
+    font-weight: 800 !important; margin: 18px 0 5px !important;
+  }
+  h3 {
+    font-weight: 800 !important; margin: 18px 0 5px !important;
+  }
+  h4 {
+    font-weight: 800 !important; margin: 18px 0 5px !important;
+  }
+  h1 {
+    font-size: 28px !important;
+  }
+  h2 {
+    font-size: 16px !important;
+  }
+  h3 {
+    font-size: 14px !important;
+  }
+  .title-charts{
+    font-size: 13px !important;
+  }
+  .container {
+    padding: 0 !important; width: 100% !important;
+  }
+  .content {
+    padding: 0 !important;
+  }
+  .content-wrap {
+    padding: 10px !important;
+  }
+  .invoice {
+    width: 100% !important;
+  }
+  img.logo {
+    float: right !important; margin-top: 20px !important; margin-right: 5px !important;
+  }
+}
+@media screen and (max-width: 30em) {
+  table.responsive-table {
+    box-shadow: none;
+  }
+  table.ranking-tables th.resp-align {
+    display: none;
+  }
+  table.display th {
+    padding: .5em;
+  }
+  table.display td {
+    padding: .5em;
+  }
+  table.responsive-table td:nth-child(1):before {
+    content: 'Position';
+  }
+  table.responsive-table td:nth-child(2):before {
+    content: 'App Name';
+  }
+  table.responsive-table td:nth-child(3):before {
+    content: 'Total';
+  }
+  table.responsive-table td:nth-child(1) {
+    padding-left: 25%; text-align: right;
+  }
+  table.responsive-table td:nth-child(2) {
+    padding-left: 25%; text-align: right;
+  }
+  table.responsive-table td:nth-child(3) {
+    padding-left: 25%; text-align: right;
+  }
+  table.responsive-table td:nth-child(1):before {
+    position: absolute; left: .5em;
+  }
+  table.responsive-table td:nth-child(2):before {
+    position: absolute; left: .5em;
+  }
+  table.responsive-table td:nth-child(3):before {
+    position: absolute; left: .5em;
+  }
+  table.responsive-table tr {
+    display: block;
+  }
+  table.responsive-table td {
+    display: block;
+  }
+  table.responsive-table tr {
+    position: relative; margin-bottom: 1em; box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  }
+  table.responsive-table td {
+    border-top: none;
+  }
+  table.responsive-table td.organization-position {
+    background: #f6f6f6; border-top: 1px solid #e6e6e6;
+  }
+  table.responsive-table td.value-data-dis {
+    position: absolute; top: 0; right: 0; border: none; background: none;
+  }
+  table.responsive-table tbody tr:nth-child(odd) {
+    background-color: #FFFFFF !important;
+  }
+}
+</style>
 
-<table class="body-wrap">
-	<tr>
-		<td></td>
-		<td class="container" width="620">
+<table class="body-wrap" style="background: #f6f6f6; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; width: 100%" bgcolor="#f6f6f6">
+	<tr style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+		<td style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"></td>
+		<td class="container" width="620" style="box-sizing: border-box; clear: both !important; display: block !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0 auto; max-width: 620px !important">
 			
-			<div class="content">
+			<div class="content" style="box-sizing: border-box; display: block; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0 auto; max-width: 620px; padding: 20px">
 			
-				<table class="main" width="100%" cellpadding="0" cellspacing="0">
-					<tr>
-						<td>
-							<table width="100%" cellpadding="0" cellspacing="0">
-								<tr>
-									<td class="content-header">
-										<img class="logo" src="http://www.cardoso.cc/movile/logo_movile.png" alt="Movile" width="95" height="26">
-										<h1>Apps Daily Indicator</h1>
-										<p class="titles-di">Ranking Global</h2>
-										<h4>Monday, March 07, 2016 <span class="go-movile">&nbsp;#gomovile</span></h4>
-										
+				<table class="main" width="100%" cellpadding="0" cellspacing="0" style="background: #FFFFFF; border-radius: 3px; border: 1px solid #e6e6e6; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" bgcolor="#FFFFFF">
+					<tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+						<td style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+							<table width="100%" cellpadding="0" cellspacing="0" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+								<tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+									<td class="content-header" style="background-color: #FFFFFF !important; border-top-color: #3a536a !important; border-top-style: solid !important; border-top-width: 3px !important; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: 30px 20px 10px" bgcolor="#FFFFFF !important">
+										<img class="logo" src="http://www.cardoso.cc/movile/logo_movile.png" alt="Movile" width="95" height="26" style="box-sizing: border-box; float: right !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0px 5px 0 0; max-width: 100%" align="right !important" />
+										<h1 style="box-sizing: border-box; color: #f52b84 !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif !important; font-size: 24px !important; font-weight: 600 !important; line-height: 1.1 !important; margin: 0 0 4px">Apps Daily Indicator</h1>
+										<p class="titles-di" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal !important; margin: 0 0 10px">Ranking Global
+										</p><h4 style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 13px !important; font-weight: normal !important; margin: 0"> {{date}} 
+										<span class="go-movile" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700 !important; margin: 0"> #gomovile</span></h4></td></tr><tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+									<td class="titles-daily-indicator" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: 20px 20px 10px">
+											<h3 style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif !important; font-size: 14px !important; font-weight: 700 !important; line-height: 1.1 !important; margin: 0 0 4px">MOVILE GLOBAL</h3>
+											<h4 style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 13px !important; font-weight: normal !important; margin: -5px 0 6px; padding: 0px">Last 30 days</h4>
+											<span style="border-bottom-color: #3a536a; border-bottom-style: solid; border-bottom-width: 3px; box-sizing: border-box; display: block; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: 0; width: 20px"></span>
+											<hr height="1" style="background: #B5C1CC; border: 0 none; box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; height: 1px; margin: 0" />
 									</td>
 								</tr>
-								<tr>
-									<td class="titles-daily-indicator">
-											<h3>MOVILE GLOBAL</h3>
-											<h4>Last 30 days</h4>
-											<span></span>
-											<hr height="1" style="height:1px; border:0 none; color: #B5C1CC; background-color: #B5C1CC;">
-									</td>
-								</tr>
 
-								<table class="global-indicators">
-									  <tbody>
-										    <tr>
-										      <td><p class="title-charts">NEW INSTALLS<p></td>
-										      <td><p>48,719K</p></td>
-										      <td width="25px">&nbsp;</td>
-											  <td><p class="title-charts">IN APP<p></td>
-										      <td><p>5,145M</p></td>
+								<table class="global-indicators" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: 20px 20px 10px">
+									  <tbody style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										    <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										      <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"><p class="title-charts" style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: left !important" align="left !important">NEW INSTALLS</p><p style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: right !important" align="right !important"></p></td>
+										      <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"><p style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: right !important" align="right !important">{{label[0]}}</p></td>
+										      <td width="25px" style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"> </td>
+											  <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"><p class="title-charts" style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: left !important" align="left !important">IN APP</p><p style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: right !important" align="right !important"></p></td>
+										      <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0"><p style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: right !important" align="right !important">{{label[2]}}</p></td>
 										    </tr>
-										    <tr>										    
-										      <td colspan="2"><span class="set-growth">5%<i class="ico-arrow"><img src="http://www.cardoso.cc/movile/ico-growth.png" alt="icon" width="9" height="11"></i></span></td>
-										      <td>&nbsp;</td>
-										      <td colspan="2"><span class="set-growth">20%<i class="ico-arrow"><img src="http://www.cardoso.cc/movile/ico-growth.png" alt="icon" width="9" height="11"></i></span></td>
+										    <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">										    
+										      <td colspan="2" style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0"><span class="set-growth" style="box-sizing: border-box; color: {{color(label[1])}}; float: right; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; margin: 0; text-align: right">{{label[1]}}%<i class="ico-arrow" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0; padding-left: 4px !important; vertical-align: middle"><img src="{{link(label[1])}}" width="9" height="11" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0; max-width: 100%" border="0" /></i></span></td>
+										      <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"> </td>
+										      <td colspan="2" style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0"><span class="set-growth" style="box-sizing: border-box; color: {{color(label[3])}}; float: right; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; margin: 0; text-align: right">{{label[3]}}%<i class="ico-arrow" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0; padding-left: 4px !important; vertical-align: middle"><img src="{{link(label[3])}}" width="9" height="11" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0; max-width: 100%" border="0"/></i></span></td>
 										    </tr> 
-										    <tr>
-										      <td colspan="2"><!--Insert chart NEW INSTALLS image here "with 250px"--><img src="http://www.cardoso.cc/movile/line-chart-new-installs.png"  alt="Chart New Installs" width="250" height="102"></td>
-										      <td>&nbsp;</td>
-										      <td colspan="2"><!--Insert chart IN APPimage here "with 250px"--><img src="http://www.cardoso.cc/movile/line-chart-inApp.png" alt="Chart In App" width="250" height="102"></td>
+										    <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0">
+										      <td colspan="2" style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0"><img src="{{cid[0]}}" alt="Chart New Installs" width="250" height="102" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; max-width: 100%" /></td>
+										      <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0"> </td>
+										      <td colspan="2" style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"><img src="{{cid[1]}}" alt="Chart In App" width="250" height="102" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; max-width: 100%" /></td>
 										    </tr>
 									  </tbody>
 								</table>
-								<table class="global-indicators">
-									  <tbody>
-										    <tr>
-										      <td><p class="title-charts">DAU<p></td>
-										      <td><p>11,234K</p></td>
-										      <td width="25px">&nbsp;</td>
-											  <td><p class="title-charts">MAU<p></td>
-										      <td><p>59,736K</p></td>
+								<table class="global-indicators" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: 20px 20px 10px">
+									  <tbody style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										    <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										      <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"><p class="title-charts" style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: left !important" align="left !important">DAU</p><p style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: right !important" align="right !important"></p></td>
+										      <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0"><p style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: right !important" align="right !important">{{label[4]}}</p></td>
+										      <td width="25px" style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"> </td>
+											  <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"><p class="title-charts" style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: left !important" align="left !important">MAU</p><p style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: right !important" align="right !important"></p></td>
+										      <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; margin: 0"><p style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px !important; font-weight: 700 !important; margin: 0 0 0px; text-align: right !important" align="right !important">{{label[6]}}</p></td>
 										    </tr>
-										    <tr>										    
-										      <td colspan="2"><span class="set-decay">3%<i class="ico-arrow"><img src="http://www.cardoso.cc/movile/ico-decay.png" alt="ico" width="9" height="11"></i></span></td>
-										      <td>&nbsp;</td>
-										      <td colspan="2"><span class="set-growth">9%<i class="ico-arrow"><img src="http://www.cardoso.cc/movile/ico-growth.png" alt="ico" width="9" height="11"></i></span></td>
+										    <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">										    
+										      <td colspan="2" style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"><span class="set-decay" style="box-sizing: border-box; color: {{ color(label[5]) }}; float: right; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; margin: 0; text-align: right">{{label[5]}}%<i class="ico-arrow" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding-left: 4px !important; vertical-align: middle"><img src="{{link(label[5])}}"  width="9" height="11" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; max-width: 100%" /></i></span></td>
+										      <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"> </td>
+										      <td colspan="2" style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"><span class="set-growth" style="box-sizing: border-box; color: {{ color(label[7]) }}; float: right; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; margin: 0; text-align: right">{{label[7]}}%<i class="ico-arrow" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding-left: 4px !important; vertical-align: middle"><img src="{{link(label[7])}}" width="9" height="11" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; max-width: 100%" /></i></span></td>
 										    </tr> 
-										    <tr>
-										      <td colspan="2"><!--Insert chart DAU image here "with 250px"--><img src="http://www.cardoso.cc/movile/line-chart-dau.png" alt="Chart DAU" width="250" height="102"></td>
-										      <td>&nbsp;</td>
-										      <td colspan="2"><!--Insert chart MAU image here "with 250px"--><img src="http://www.cardoso.cc/movile/line-chart-mau.png" alt="Chart MAU" width="250" height="102"></td>
+										    <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										      <td colspan="2" style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"><img src="{{cid[2]}}" alt="Chart DAU" width="250" height="102" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; max-width: 100%" /></td>
+										      <td style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"> </td>
+										      <td colspan="2" style="border: none; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"><img src="{{cid[3]}}" alt="Chart MAU" width="250" height="102" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; max-width: 100%" /></td>
 										    </tr>
 									  </tbody>
 								</table>								
-								<tr>
-								<tr>
-									<td class="titles-daily-indicator">
-											<h3>TOP 5 APPS</h3>
-											<h4>Last 7 days</h4>
-											<span></span>
-											<hr height="1" style="height:1px; border:0 none; color: #B5C1CC; background-color: #B5C1CC;">
+								<tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+								</tr><tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+									<td class="titles-daily-indicator" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: 20px 20px 10px">
+											<h3 style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif !important; font-size: 14px !important; font-weight: 700 !important; line-height: 1.1 !important; margin: 0 0 4px">TOP 5 APPS</h3>
+											<h4 style="box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 13px !important; font-weight: normal !important; margin: -5px 0 6px; padding: 0px">Last 7 days</h4>
+											<span style="border-bottom-color: #3a536a; border-bottom-style: solid; border-bottom-width: 3px; box-sizing: border-box; display: block; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: 0; width: 20px"></span>
+											<hr height="1" style="background: #B5C1CC; border: 0 none; box-sizing: border-box; color: #3a536a !important; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; height: 1px; margin: 0" />
 									</td>
 								</tr>
-									<td class="content-block">
+									<td class="content-block" style="background: #FFFFFF; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: 20px" bgcolor="#FFFFFF">
 										<!-- RANKING MAU -->
-										<table class="layout display responsive-table ranking-tables">
-										    <thead>
-										        <tr>
-										            <th colspan="2">MAU</th>
-										            <th colspan="2" class="align-right resp-align">Total</th>
+										<table class="layout display responsive-table ranking-tables" style="border-collapse: collapse; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 1em 0; width: 100%">
+										    <thead style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										        <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										            <th colspan="2" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">MAU</th>
+										            <th colspan="2" class="align-right resp-align" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">Total</th>
 										        </tr>
 										    </thead>
-										    <tbody>
-										        <tr class="highlight">
-										            <td class="organization-position">#1</td>
-										            <td class="organization-name">iFood Android</td>
-										            <td class="value-data-di align-right">148,875,99</td>
+										    <tbody style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										        <tr class="highlight" style="background: #f6f6f6; box-sizing: border-box; color: #f52b84; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" bgcolor="#f6f6f6">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#1</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{mau[0].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">{{mau[0].value}}</td>
 										        </tr>
-										        <tr>
-										            <td class="organization-position">#2</td>
-										            <td class="organization-name">PlayKids iOS</td>
-										            <td class="value-data-di align-right">112,576,32</td>
+										        <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#2</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{mau[1].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">{{mau[1].value}}</td>
 										        </tr>
-										        <tr>
-										            <td class="organization-position">#3</td>
-										            <td class="organization-name">Be Bot</td>
-										            <td class="value-data-di align-right">35,897,67</td>
+										        <tr style="background: #f6f6f6; box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" bgcolor="#f6f6f6">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#3</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{mau[2].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">{{mau[2].value}}</td>
 										        </tr>
-										        <tr>
-										            <td class="organization-position">#4</td>
-										            <td class="organization-name">PlayKids Talk Android</td>
-										            <td class="value-data-di align-right">875,99</td>
+										        <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#4</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{mau[3].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">{{mau[3].value}}</td>
 										        </tr>
 
-										        <tr>
-										            <td class="organization-position">#5</td>
-										            <td class="organization-name">Movile Stadium iOS</td>
-										            <td class="value-data-di align-right">113,45</td>
+										        <tr style="background: #f6f6f6; box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" bgcolor="#f6f6f6">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#5</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{mau[4].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">{{mau[4].value}}</td>
 										        </tr>								    
 										    </tbody>
 										</table>
 										<!-- RANKING MONETIZATION -->
-										<table class="layout display responsive-table ranking-tables pd-rkng">
-										    <thead>
-										        <tr>
-										            <th colspan="2">MONETIZATION</th>
-										            <th colspan="2" class="align-right resp-align">Total R$</th>
+										<table class="layout display responsive-table ranking-tables pd-rkng" style="border-collapse: collapse; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 35px 0 1em; width: 100%">
+										    <thead style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										        <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										            <th colspan="2" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">MONETIZATION</th>
+										            <th colspan="2" class="align-right resp-align" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">Total $</th>
 										        </tr>
 										    </thead>
-										    <tbody>
-										        <tr class="highlight">
-										            <td class="organization-position">#1</td>
-										            <td class="organization-name">iFood Android</td>
-										            <td class="value-data-di align-right">R$ 148,875,99</td>
+										    <tbody style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										        <tr class="highlight" style="background: #f6f6f6; box-sizing: border-box; color: #f52b84; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" bgcolor="#f6f6f6">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#1</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{inapp[0].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">$ {{inapp[0].value}}</td>
 										        </tr>
-										        <tr>
-										            <td class="organization-position">#2</td>
-										            <td class="organization-name">PlayKids iOS</td>
-										            <td class="value-data-di align-right">R$ 112,576,32</td>
+										        <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#2</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{inapp[1].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">$ {{inapp[1].value}}</td>
 										        </tr>
-										        <tr>
-										            <td class="organization-position">#3</td>
-										            <td class="organization-name">Be Bot</td>
-										            <td class="value-data-di align-right">R$ 35,897,67</td>
+										        <tr style="background: #f6f6f6; box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" bgcolor="#f6f6f6">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#3</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{inapp[2].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">$ {{inapp[2].value}}</td>
 										        </tr>
-										        <tr>
-										            <td class="organization-position">#4</td>
-										            <td class="organization-name">PlayKids Talk Android</td>
-										            <td class="value-data-di align-right">R$ 875,99</td>
+										        <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#4</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{inapp[3].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">$ {{inapp[3].value}}</td>
 										        </tr>
 
-										        <tr>
-										            <td class="organization-position">#5</td>
-										            <td class="organization-name">Movile Stadium iOS</td>
-										            <td class="value-data-di align-right">R$ 113,45</td>
+										        <tr style="background: #f6f6f6; box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" bgcolor="#f6f6f6">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#5</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{inapp[4].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">$ {{inapp[4].value}}</td>
 										        </tr>								    
 										    </tbody>
 										</table>
 
 										<!-- RANKING NEW INSTALLS -->
-										<table class="layout display responsive-table ranking-tables pd-rkng">
-										    <thead>
-										        <tr>
-										            <th colspan="2">NEW INSTALLS</th>
-										            <th colspan="2" class="align-right resp-align">Total</th>
+										<table class="layout display responsive-table ranking-tables pd-rkng" style="border-collapse: collapse; box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 35px 0 1em; width: 100%">
+										    <thead style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										        <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										            <th colspan="2" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">NEW INSTALLS</th>
+										            <th colspan="2" class="align-right resp-align" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">Total</th>
 										        </tr>
 										    </thead>
-										    <tbody>
-										        <tr class="highlight">
-										            <td class="organization-position">#1</td>
-										            <td class="organization-name">iFood Android</td>
-										            <td class="value-data-di align-right">148,875,99</td>
+										    <tbody style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										        <tr class="highlight" style="background: #f6f6f6; box-sizing: border-box; color: #f52b84; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" bgcolor="#f6f6f6">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#1</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{install[0].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">{{install[0].value}}</td>
 										        </tr>
-										        <tr>
-										            <td class="organization-position">#2</td>
-										            <td class="organization-name">PlayKids iOS</td>
-										            <td class="value-data-di align-right">112,576,32</td>
+										        <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#2</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{install[1].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">{{install[1].value}}</td>
 										        </tr>
-										        <tr>
-										            <td class="organization-position">#3</td>
-										            <td class="organization-name">Be Bot</td>
-										            <td class="value-data-di align-right">35,897,67</td>
+										        <tr style="background: #f6f6f6; box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" bgcolor="#f6f6f6">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#3</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{install[2].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">{{install[2].value}}</td>
 										        </tr>
-										        <tr>
-										            <td class="organization-position">#4</td>
-										            <td class="organization-name">PlayKids Talk Android</td>
-										            <td class="value-data-di align-right">875,99</td>
+										        <tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#4</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{install[3].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">{{install[3].value}}</td>
 										        </tr>
-										        <tr>
-										            <td class="organization-position">#5</td>
-										            <td class="organization-name">Movile Stadium iOS</td>
-										            <td class="value-data-di align-right">113,45</td>
+										        <tr style="background: #f6f6f6; box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" bgcolor="#f6f6f6">
+										            <td class="organization-position" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">#5</td>
+										            <td class="organization-name" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: left" align="left">{{install[4].name}}</td>
+										            <td class="value-data-di align-right" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; padding: .8em .5em; text-align: right" align="right">{{install[4].value}}</td>
 										        </tr>								    
 										    </tbody>
 										</table>
 									</td>
-								</tr>
-								<tr>
-									<td class="content-footer">
-										<hr height="1" style="height:1px; border:0 none; color: #B5C1CC; background-color: #B5C1CC;">
-										<br>
-										<br>
-										You received this email because you are subscribed to <br> Movile Corporate Daily Indicator.						
+								
+								<tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+									<td class="content-footer" style="box-sizing: border-box; color: #939393; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 11px !important; line-height: 15px; margin: 0; padding: 5px 20px; text-align: center" align="center">
+										<hr height="1" style="background: #B5C1CC; border: 0 none; box-sizing: border-box; color: #B5C1CC; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; height: 1px; margin: 0" />
+										<br style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" />
+										<br style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" />
+										You received this email because you are subscribed to <br style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0" /> Movile Corporate Daily Indicator.						
 									</td>
 								</tr>
-								<tr>
-									<td class="content-footer">										
-										<a class="link-footer" href="http://www.movile.com" alt="View this e-mail in browser" target="_blank">View in browser</a>	
+								<tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+									<td class="content-footer" style="box-sizing: border-box; color: #939393; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 11px !important; line-height: 15px; margin: 0; padding: 5px 20px; text-align: center" align="center">										
+										<a class="link-footer" href="http://www.movile.com" alt="View this e-mail in browser" target="_blank" style="box-sizing: border-box; color: #f52b84; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 700; margin: 0; text-decoration: none">View in browser</a>	
 									</td>
 								</tr>
-								<tr>
-									<td class="content-footer">
-										Any problems report <b>IT Data Intelligence</b>
+								<tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+									<td class="content-footer" style="box-sizing: border-box; color: #939393; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 11px !important; line-height: 15px; margin: 0; padding: 5px 20px; text-align: center" align="center">
+										Any problems report <b style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 11px; font-weight: 700; margin: 0">IT Data Intelligence</b>
 									</td>
 								</tr>								
-								<tr>
-									<td class="content-footer">
-										<img src="http://www.cardoso.cc/movile/logo-movile-footer.png" alt="Logo Movile">
+								<tr style="box-sizing: border-box; color: #3a536a; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0">
+									<td class="content-footer" style="box-sizing: border-box; color: #939393; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 11px !important; line-height: 15px; margin: 0; padding: 5px 20px; text-align: center" align="center">
+										<img src="http://www.cardoso.cc/movile/logo-movile-footer.png" alt="Logo Movile" style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0; max-width: 100%; padding-bottom: 30px" />
 									</td>
 								</tr>			
 	
@@ -237,7 +359,7 @@
 				</table>
 			</div>
 		</td>
-		<td></td>
+		<td style="box-sizing: border-box; font-family: 'Proxima Nova Soft', Helvetica, Arial, sans-serif; font-size: 16px; margin: 0"></td>
 	</tr>
 </table>
 </body>
