@@ -9,20 +9,38 @@
 ---------------------------------------------------------------------------- */
 @font-face {
   font-family: "Proxima Nova Soft";
-  src: url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.eot");
-  src: url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.eot?#iefix") format("embedded-opentype"), url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.woff2") format("woff2"), url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.woff") format("woff"), url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.ttf") format("truetype"), url("http://www.cardoso.cc/movile/fonts/font-face/regular/proximanovasoft-regular.svg#svgFontName") format("svg");
+  src: url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.eot");
+  src: url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.eot?#iefix") format("embedded-opentype"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.woff2") format("woff2"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.woff") format("woff"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.ttf") format("truetype"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.svg#svgFontName") format("svg");
   font-weight: normal;
 }
 @font-face {
   font-family: "Proxima Nova Soft";
-  src: url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.eot");
-  src: url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.eot?#iefix") format("embedded-opentype"), url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.woff2") format("woff2"), url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.woff") format("woff"), url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.ttf") format("truetype"), url("http://www.cardoso.cc/movile/fonts/font-face/semi-bold/proximanovasoft-semibold.svg#svgFontName") format("svg");
+  src: url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.eot");
+  src: url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.eot?#iefix") format("embedded-opentype"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.woff2") format("woff2"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.woff") format("woff"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.ttf") format("truetype"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.svg#svgFontName") format("svg");
   font-weight: 600;
 }
 @font-face {
   font-family: "Proxima Nova Soft";
-  src: url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.eot");
-  src: url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.eot?#iefix") format("embedded-opentype"), url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.woff2") format("woff2"), url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.woff") format("woff"), url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.ttf") format("truetype"), url("http://www.cardoso.cc/movile/fonts/font-face/bold/proximanovasoft-bold.svg#svgFontName") format("svg");
+  src: url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.eot");
+  src: url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.eot?#iefix") format("embedded-opentype"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.woff2") format("woff2"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.woff") format("woff"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.ttf") format("truetype"), url("
+http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.svg#svgFontName") format("svg");
   font-weight: 700;
 }
 /* -------------------------------------

@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+<head style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+<meta name="viewport" content="width=device-width" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" />
+<meta http-equiv="cache-control" content="max-age=0" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" />
+<meta http-equiv="cache-control" content="no-cache" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" />
+<meta http-equiv="Pragma" content="no-cache" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+<meta http-equiv="Expires" content="-1" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+<title style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >Movile - Apps Daily Indicator</title>
+<style type="text/css" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+
+@font-face {
+  font-family: "Proxima Nova Soft";
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.eot");
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.eot?#iefix") format("embedded-opentype"), 
+  url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.woff2") format("woff2"), 
+  url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.woff") format("woff"), 
+  url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.ttf") format("truetype"), 
+  url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.svg#svgFontName") format("svg");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Soft";
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.eot");
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.eot?#iefix") format("embedded-opentype"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.woff2") format("woff2"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.woff") format("woff"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.ttf") format("truetype"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.svg#svgFontName") format("svg");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Proxima Nova Soft";
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.eot");
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.eot?#iefix") format("embedded-opentype"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.woff2") format("woff2"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.woff") format("woff"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.ttf") format("truetype"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.svg#svgFontName") format("svg");
+  font-weight: 700;
+}
+
+* {
+  margin: 0;
+  font-family: "Proxima Nova Soft", Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+img {
+  max-width: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  width: 100% !important;
+  height: 100%;
+  line-height: 1.6em;
+  
+  
+}
+
+b {
+  font-weight: 700;
+  font-size: 11px;
+  color: #3a536a;
+}
+table td tr {
+  color: #3a536a;
+}
+hr.style-hr {
+  border: 0 !important;
+  height: 0 !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+.body-wrap {
+  background-color: #f6f6f6;
+  width: 100%;
+}
+.container {
+  display: block !important;
+  max-width: 620px !important;
+  margin: 0 auto !important;
+  
+  clear: both !important;
+}
+.content {
+  max-width: 620px;
+  margin: 0 auto;
+  display: block;
+  padding: 20px;
+}
+.main {
+  background-color: #FFFFFF;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+}
+.content-wrap {
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Proxima Nova Soft", Helvetica, Arial, sans-serif !important;
+  color: #f52b84 !important;
+  line-height: 1.1 !important;
+  margin-bottom: 4px !important;
+}
+h1 {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  
+  
+}
+h2 {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  
+  
+}
+h3 {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #3a536a !important;
+  
+  
+}
+h4 {
+  font-size: 13px !important;
+  color: #3a536a !important;
+  font-weight: normal !important;
+}
+p,
+ul,
+ol {
+  margin-bottom: 10px;
+  font-weight: normal !important;
+}
+p li,
+ul li,
+ol li {
+  margin-left: 5px !important;
+  list-style-position: inside !important;
+}
+
+a {
+  color: #f52b84;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-primary {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #348eda;
+  border: solid #348eda;
+  border-width: 10px 20px;
+  line-height: 2em;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+table.ranking-tables th,
+table.ranking-tables td {
+  text-align: left;
+}
+table.ranking-tables th.align-right {
+  text-align: right;
+}
+table.ranking-tables td.align-right {
+  text-align: right;
+}
+table.layout {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.display {
+  margin: 1em 0;
+}
+table.display th,
+table.display td {
+  padding: .8em .5em;
+}
+table.pd-rkng {
+  margin-top: 35px !important;
+}
+table.responsive-table tbody tr:nth-child(odd) {
+  background: #f6f6f6;
+}
+table.responsive-table tbody tr.highlight {
+  color: #f52b84;
+}
+
+.content-header {
+  background-color: #FFFFFF !important;
+  padding: 30px 20px 10px 20px !important;
+  border-top: solid 3px #3a536a !important;
+}
+img.logo {
+  float: right !important;
+  margin-top: 0px;
+  margin-right: 5px;
+}
+.go-movile {
+  font-weight: 700 !important;
+}
+.date {
+  font-size: 14px !important;
+}
+
+.titles-daily-indicator {
+  padding: 20px 20px 10px 20px;
+}
+.titles-daily-indicator h4 {
+  padding: 0px;
+  margin-top: -5px;
+  margin-bottom: 6px;
+}
+.titles-daily-indicator span {
+  padding: 0;
+  margin: 0;
+  width: 20px;
+  display: block;
+  border-bottom: 3px solid #3a536a;
+}
+.titles-daily-indicator hr {
+  color: #3a536a !important;
+}
+.global-indicators {
+  padding: 20px 20px 10px 20px !important;
+}
+.global-indicators tr td {
+  border: none;
+}
+.global-indicators h1 {
+  color: #3a536a;
+  font-weight: 700;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.global-indicators p {
+  font-size: 16px !important;
+  color: #3a536a !important;
+  font-weight: 700 !important;
+  margin-bottom: 0px !important;
+  text-align: right !important;
+}
+.global-indicators .title-charts {
+  text-align: left !important;
+}
+.global-indicators span {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  float: right;
+}
+.ico-arrow {
+  vertical-align: middle;
+  padding-left: 4px !important;
+}
+.set-growth {
+  color: #04cc53;
+}
+.set-decay {
+  color: #f37870;
+}
+.in-app {
+  float: right;
+}
+.new-installs {
+  float: left;
+}
+
+.content-footer {
+  font-size: 11px !important;
+  line-height: 15px;
+  text-align: center;
+  padding: 5px 20px 5px 20px !important;
+  color: #939393;
+}
+.content-footer img {
+  padding-bottom: 30px;
+}
+.link-download {
+  height: 50px;
+  background-color: red;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.content-block {
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 525px) {
+
+  body {
+    padding: 0 !important;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-weight: 800 !important;
+    margin: 20px 0 5px !important;
+  }
+  h1 {
+    font-size: 30px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  .container {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+  .content {
+    padding: 0 !important;
+  }
+  .content-wrap {
+    padding: 10px !important;
+  }
+  .invoice {
+    width: 100% !important;
+  }
+  img.logo {
+    float: right !important;
+    margin-top: 20px !important;
+    margin-right: 5px !important;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  
+    table.responsive-table {
+      box-shadow: none !important;
+    }
+    table.ranking-tables th.resp-align {
+      display: none !important;
+    }
+    table.display th,
+    table.display td {
+      padding: .5em !important;
+    }
+    table.responsive-table td:nth-child(1):before {
+      content: 'Position' !important;
+    }
+    table.responsive-table td:nth-child(2):before {
+      content: 'App Name' !important;
+    }
+    table.responsive-table td:nth-child(3):before {
+      content: 'Total' !important;
+    }
+    table.responsive-table td:nth-child(1),
+    table.responsive-table td:nth-child(2),
+    table.responsive-table td:nth-child(3) {
+      padding-left: 25% !important;
+      text-align: right !important;
+    }
+    table.responsive-table td:nth-child(1):before,
+    table.responsive-table td:nth-child(2):before,
+    table.responsive-table td:nth-child(3):before {
+      position: absolute !important;
+      left: .5em !important;
+    }
+    table.responsive-table tr,
+    table.responsive-table td {
+      display: block !important;
+    }
+    table.responsive-table tr {
+      position: relative !important;
+      margin-bottom: 1em !important;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2) !important;
+    }
+    table.responsive-table td {
+      border-top: none !important;
+    }
+    table.responsive-table td.organization-position {
+      background: #f6f6f6 !important;
+      border-top: 1px solid #e6e6e6 !important;
+    }
+    table.responsive-table td.value-data-dis {
+      position: absolute;
+      top: 0 !important;
+      right: 0 !important;
+      border: none !important;
+      background: none !important;
+    }
+    table.responsive-table tbody tr:nth-child(odd) {
+      background-color: #FFFFFF !important;
+    }
+}
+
+
+</style>
+</head>
+
+<body itemscope itemtype="http://schema.org/EmailMessage" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:none;width:100% !important;height:100%;line-height:1.6em;background-color:#f6f6f6;" >
+
+<table class="body-wrap" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;background-color:#f6f6f6;width:100%;" >
+  <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+    <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" ></td>
+    <td class="container" width="620" style="font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;display:block !important;max-width:620px !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:auto !important;margin-left:auto !important;clear:both !important;" >
+      
+      <div class="content" style="font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;max-width:620px;margin-top:0;margin-bottom:0;margin-right:auto;margin-left:auto;display:block;padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;" >
+      
+        <table class="main" width="100%" cellpadding="0" cellspacing="0" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;background-color:#FFFFFF;border-width:1px;border-style:solid;border-color:#e6e6e6;border-radius:3px;" >
+          <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+            <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+                <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                  <td class="content-header" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;background-color:#FFFFFF !important;padding-top:30px !important;padding-bottom:10px !important;padding-right:20px !important;padding-left:20px !important;border-top-width:3px !important;border-top-style:solid !important;border-top-color:#3a536a !important;" >
+                    <img class="logo" src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_incicator/logo_movile.png" alt="Movile" width="95" height="26" style="margin-bottom:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;max-width:100%;float:right !important;margin-top:0px;margin-right:5px;" >
+                    <h1 style="margin-top:0;margin-right:0;margin-left:0;box-sizing:border-box;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif !important;color:#f52b84 !important;line-height:1.1 !important;margin-bottom:4px !important;font-size:24px !important;font-weight:600 !important;" >Apps Daily Indicator</h1>
+                    <p class="titles-di" style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;margin-bottom:10px;font-weight:normal !important;" >Ranking Global</h2>
+                    <h4 style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:13px !important;color:#3a536a !important;font-weight:normal !important;" >Monday, March 07, 2016 <span class="go-movile" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;font-weight:700 !important;" >&nbsp;#gomovile</span></h4>
+                    
+                  </td>
+                </tr>
+                <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                  <td class="titles-daily-indicator" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:20px;padding-bottom:10px;padding-right:20px;padding-left:20px;" >
+                      <h3 style="margin-top:0;margin-right:0;margin-left:0;box-sizing:border-box;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif !important;line-height:1.1 !important;margin-bottom:4px !important;font-size:14px !important;font-weight:700 !important;color:#3a536a !important;" >MOVILE GLOBAL</h3>
+                      <h4 style="margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:13px !important;color:#3a536a !important;font-weight:normal !important;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;margin-top:-5px;margin-bottom:6px;" >Last 30 days</h4>
+                      <span style="font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;width:20px;display:block;border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#3a536a;" ></span>
+                      <hr height="1" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;height:1px;border-width:0;border-style:none;color:#3a536a !important;background-color:#B5C1CC;" >
+                  </td>
+                </tr>
+
+                <table class="global-indicators" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:20px !important;padding-bottom:10px !important;padding-right:20px !important;padding-left:20px !important;" >
+                    <tbody style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+                        <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                          <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><p class="title-charts" style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:left !important;" >NEW INSTALLS<p style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:right !important;" ></td>
+                          <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><p style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:right !important;" >48,719K</p></td>
+                          <td width="25px" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" >&nbsp;</td>
+                        <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><p class="title-charts" style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:left !important;" >IN APP<p style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:right !important;" ></td>
+                          <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><p style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14spx !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:right !important;" >5,145M</p></td>
+                        </tr>
+                        <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >                       
+                          <td colspan="2" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><span class="set-growth" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;color:#04cc53;text-align:right;font-size:14px;font-weight:700;float:right;" >5%<i class="ico-arrow" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;vertical-align:middle;padding-left:4px !important;" ><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_incicator/ico-growth.png" alt="icon" width="9" height="11" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;max-width:100%;" ></i></span></td>
+                          <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" >&nbsp;</td>
+                          <td colspan="2" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><span class="set-growth" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;color:#04cc53;text-align:right;font-size:14px;font-weight:700;float:right;" >20%<i class="ico-arrow" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;vertical-align:middle;padding-left:4px !important;" ><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_incicator/ico-growth.png" alt="icon" width="9" height="11" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;max-width:100%;" ></i></span></td>
+                        </tr> 
+                        <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                          <td colspan="2" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><!--Insert chart NEW INSTALLS image here "with 250px"--><img src="http://www.cardoso.cc/movile/line-chart-new-installs.png"  alt="Chart New Installs" width="250" height="102" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;max-width:100%;" ></td>
+                          <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" >&nbsp;</td>
+                          <td colspan="2" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><!--Insert chart IN APPimage here "with 250px"--><img src="http://www.cardoso.cc/movile/line-chart-inApp.png" alt="Chart In App" width="250" height="102" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;max-width:100%;" ></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="global-indicators" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:20px !important;padding-bottom:10px !important;padding-right:20px !important;padding-left:20px !important;" >
+                    <tbody style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+                        <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                          <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><p class="title-charts" style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:left !important;" >DAU<p style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:right !important;" ></td>
+                          <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><p style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:right !important;" >11,234K</p></td>
+                          <td width="25px" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" >&nbsp;</td>
+                        <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><p class="title-charts" style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:left !important;" >MAU<p style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:right !important;" ></td>
+                          <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><p style="margin-top:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px !important;color:#3a536a !important;font-weight:700 !important;margin-bottom:0px !important;text-align:right !important;" >59,736K</p></td>
+                        </tr>
+                        <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >                       
+                          <td colspan="2" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><span class="set-decay" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;color:#f37870;text-align:right;font-size:14px;font-weight:700;float:right;" >3%<i class="ico-arrow" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;vertical-align:middle;padding-left:4px !important;" ><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_incicator/ico-decay.png" alt="ico" width="9" height="11" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;max-width:100%;" ></i></span></td>
+                          <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" >&nbsp;</td>
+                          <td colspan="2" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><span class="set-growth" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;color:#04cc53;text-align:right;font-size:14px;font-weight:700;float:right;" >9%<i class="ico-arrow" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;vertical-align:middle;padding-left:4px !important;" ><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_incicator/ico-growth.png" alt="ico" width="9" height="11" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;max-width:100%;" ></i></span></td>
+                        </tr> 
+                        <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                          <td colspan="2" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><!--Insert chart DAU image here "with 250px"--><img src="http://www.cardoso.cc/movile/line-chart-dau.png" alt="Chart DAU" width="250" height="102" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;max-width:100%;" ></td>
+                          <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" >&nbsp;</td>
+                          <td colspan="2" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;border-style:none;" ><!--Insert chart MAU image here "with 250px"--><img src="http://www.cardoso.cc/movile/line-chart-mau.png" alt="Chart MAU" width="250" height="102" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;max-width:100%;" ></td>
+                        </tr>
+                    </tbody>
+                </table>                
+                <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                  <td class="titles-daily-indicator" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:20px;padding-bottom:10px;padding-right:20px;padding-left:20px;" >
+                      <h3 style="margin-top:0;margin-right:0;margin-left:0;box-sizing:border-box;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif !important;line-height:1.1 !important;margin-bottom:4px !important;font-size:14px !important;font-weight:700 !important;color:#3a536a !important;" >TOP 5 APPS</h3>
+                      <h4 style="margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:13px !important;color:#3a536a !important;font-weight:normal !important;padding-top:0px;padding-bottom:0px;padding-right:0px;padding-left:0px;margin-top:-5px;margin-bottom:6px;" >Last 7 days</h4>
+                      <span style="font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;width:20px;display:block;border-bottom-width:3px;border-bottom-style:solid;border-bottom-color:#3a536a;" ></span>
+                      <hr height="1" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;height:1px;border-width:0;border-style:none;color:#3a536a !important;background-color:#B5C1CC;" >
+                  </td>
+                </tr>
+                  <td class="content-block" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;background-color:#FFFFFF;" >
+                    <!-- RANKING MAU -->
+                    <table class="layout display responsive-table ranking-tables" style="font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;width:100%;border-collapse:collapse;margin-top:1em;margin-bottom:1em;margin-right:0;margin-left:0;" >
+                        <thead style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <th colspan="2" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >MAU</th>
+                                <th colspan="2" class="align-right resp-align" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >Total</th>
+                            </tr>
+                        </thead>
+                        <tbody style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+                            <tr class="highlight" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#f52b84;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#1</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >iFood Android</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >148,875,99</td>
+                            </tr>
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#2</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >PlayKids iOS</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >112,576,32</td>
+                            </tr>
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#3</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >Be Bot</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >35,897,67</td>
+                            </tr>
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#4</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >PlayKids Talk Android</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >875,99</td>
+                            </tr>
+
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#5</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >Movile Stadium iOS</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >113,45</td>
+                            </tr>                   
+                        </tbody>
+                    </table>
+                    <!-- RANKING MONETIZATION -->
+                    <table class="layout display responsive-table ranking-tables pd-rkng" style="font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;width:100%;border-collapse:collapse;margin-bottom:1em;margin-right:0;margin-left:0;margin-top:35px !important;" >
+                        <thead style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <th colspan="2" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >MONETIZATION</th>
+                                <th colspan="2" class="align-right resp-align" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >Total R$</th>
+                            </tr>
+                        </thead>
+                        <tbody style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+                            <tr class="highlight" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#f52b84;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#1</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >iFood Android</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >R$ 148,875,99</td>
+                            </tr>
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#2</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;">PlayKids iOS</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >R$ 112,576,32</td>
+                            </tr>
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;">#3</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;">Be Bot</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >R$ 35,897,67</td>
+                            </tr>
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;">#4</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;">PlayKids Talk Android</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >R$ 875,99</td>
+                            </tr>
+
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;">#5</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >Movile Stadium iOS</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >R$ 113,45</td>
+                            </tr>                   
+                        </tbody>
+                    </table>
+
+                    <!-- RANKING NEW INSTALLS -->
+                    <table class="layout display responsive-table ranking-tables pd-rkng" style="font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;width:100%;border-collapse:collapse;margin-bottom:1em;margin-right:0;margin-left:0;margin-top:35px !important;">
+                        <thead style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <th colspan="2" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;">NEW INSTALLS</th>
+                                <th colspan="2" class="align-right resp-align" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >Total</th>
+                            </tr>
+                        </thead>
+                        <tbody style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+                            <tr class="highlight" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#f52b84;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#1</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >iFood Android</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >148,875,99</td>
+                            </tr>
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#2</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >PlayKids iOS</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >112,576,32</td>
+                            </tr>
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#3</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >Be Bot</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >35,897,67</td>
+                            </tr>
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#4</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >PlayKids Talk Android</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >875,99</td>
+                            </tr>
+                            <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                                <td class="organization-position" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >#5</td>
+                                <td class="organization-name" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;" >Movile Stadium iOS</td>
+                                <td class="value-data-di align-right" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;padding-top:.8em;padding-bottom:.8em;padding-right:.5em;padding-left:.5em;text-align:right;" >113,45</td>
+                            </tr>                   
+                        </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                  <td class="content-footer" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:11px !important;line-height:15px;text-align:center;padding-top:5px !important;padding-bottom:5px !important;padding-right:20px !important;padding-left:20px !important;color:#939393;" >
+                    <hr height="1" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;height:1px;border-width:0;border-style:none;color:#B5C1CC;background-color:#B5C1CC;" >
+                    <br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+                    <br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" >
+                    You received this email because you are subscribed to <br style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" > Movile Corporate Daily Indicator.           
+                  </td>
+                </tr>
+                <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                  <td class="content-footer" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:11px !important;line-height:15px;text-align:center;padding-top:5px !important;padding-bottom:5px !important;padding-right:20px !important;padding-left:20px !important;color:#939393;" >                    
+                    <a class="link-footer" href="http://www.movile.com" alt="View this e-mail in browser" target="_blank" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#f52b84;text-decoration:none;font-weight:700;" >View in browser</a> 
+                  </td>
+                </tr>
+                <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                  <td class="content-footer" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:11px !important;line-height:15px;text-align:center;padding-top:5px !important;padding-bottom:5px !important;padding-right:20px !important;padding-left:20px !important;color:#939393;" >
+                    Any problems report <b style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-weight:700;font-size:11px;color:#3a536a;" >IT Data Intelligence</b>
+                  </td>
+                </tr>               
+                <tr style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;color:#3a536a;" >
+                  <td class="content-footer" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:11px !important;line-height:15px;text-align:center;padding-top:5px !important;padding-bottom:5px !important;padding-right:20px !important;padding-left:20px !important;color:#939393;" >
+                    <img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_incicator/logo-movile-footer.png" alt="Logo Movile" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;max-width:100%;padding-bottom:30px;" >
+                  </td>
+                </tr>     
+  
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;font-family:'Proxima Nova Soft', Helvetica, Arial, sans-serif;box-sizing:border-box;font-size:14px;" ></td>
+  </tr>
+</table>
+</body>
+</html>
