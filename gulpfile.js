@@ -7,7 +7,7 @@ var
  
 gulp.task('connect', connect.server({
   root: ['app'],
-  port: 1337,
+  port: 9090,
   livereload: true,
   open: {
     browser: 'Google Chrome' // if not working OS X browser: 'Google Chrome' 
@@ -19,10 +19,6 @@ gulp.task('html', function () {
     .pipe(connect.reload());
 });
 
-gulp.task('html', function () {
-  gulp.src('./app/inlined/*.html')
-    .pipe(connect.reload());
-});
 
 gulp.task('css', function () {
   gulp.src('./app/styles/*.css')
@@ -42,7 +38,6 @@ gulp.task('less', function () {
  
 gulp.task('watch', function () {
   gulp.watch(['./app/*.html'], ['html']);
-  gulp.watch(['./app/inlined/*.html'], ['html']);
   gulp.watch(['./app/styles/*.css'], ['css']);
   gulp.watch(['./less/**/*.less'], ['less']);
 });
