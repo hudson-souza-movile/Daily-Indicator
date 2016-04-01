@@ -3,44 +3,25 @@
  Apps Daily Indicator 2016
  © Movile Company
  Original Repo: https://github.com/tiago-cardoso-movile/Daily-Indicator
- Created by: Tiago Cardoso - twitter: @elcardoson
  License: MIT
 
 ---------------------------------------------------------------------------- */
 @font-face {
   font-family: "Proxima Nova Soft";
-  src: url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.eot");
-  src: url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.eot?#iefix") format("embedded-opentype"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.woff2") format("woff2"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.woff") format("woff"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.ttf") format("truetype"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.svg#svgFontName") format("svg");
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.eot");
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.eot?#iefix") format("embedded-opentype"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.woff2") format("woff2"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.woff") format("woff"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.ttf") format("truetype"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/regular/proximanovasoft-regular.svg#svgFontName") format("svg");
   font-weight: normal;
 }
 @font-face {
   font-family: "Proxima Nova Soft";
-  src: url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.eot");
-  src: url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.eot?#iefix") format("embedded-opentype"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.woff2") format("woff2"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.woff") format("woff"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.ttf") format("truetype"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.svg#svgFontName") format("svg");
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.eot");
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.eot?#iefix") format("embedded-opentype"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.woff2") format("woff2"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.woff") format("woff"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.ttf") format("truetype"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/semi-bold/proximanovasoft-semibold.svg#svgFontName") format("svg");
   font-weight: 600;
 }
 @font-face {
   font-family: "Proxima Nova Soft";
-  src: url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.eot");
-  src: url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.eot?#iefix") format("embedded-opentype"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.woff2") format("woff2"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.woff") format("woff"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.ttf") format("truetype"), url("
-http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.svg#svgFontName") format("svg");
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.eot");
+  src: url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.eot?#iefix") format("embedded-opentype"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.woff2") format("woff2"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.woff") format("woff"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.ttf") format("truetype"), url("http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/bold/proximanovasoft-bold.svg#svgFontName") format("svg");
   font-weight: 700;
 }
 /* -------------------------------------
@@ -55,24 +36,6 @@ http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/b
 /* -------------------------------------
     TYPOGRAPHY SETUP
 ------------------------------------- */
-/*@table-cell-padding:            8px;
-//** Padding for cells in `.table-condensed`.
-@table-condensed-cell-padding:  5px;
-
-//** Default background color used for all tables.
-@table-bg:                      transparent;
-//** Background color used for `.table-striped`.
-@table-bg-accent:               #f9f9f9;
-//** Background color used for `.table-hover`.
-@table-bg-hover:                #F2F5F7;
-@table-bg-active:               @table-bg-hover;
-
-//** Border color for table and cell borders.
-@table-border-color:            #D2D5D9;
-
-
-//** Spacing line height for tables and cells
-@line-height-tables: 			3.128571429; // 20/35*/
 /* -------------------------------------
     GLOBAL
     A very basic CSS reset
@@ -107,6 +70,51 @@ table td tr {
 /* -------------------------------------
     BODY & CONTAINER
 ------------------------------------- */
+/* CLIENT-SPECIFIC STYLES */
+body,
+table,
+td,
+a {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* Prevent WebKit and Windows mobile changing default text sizes */
+table,
+td {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+/* Remove spacing between tables in Outlook 2007 and up */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+/* Allow smoother rendering of resized image in Internet Explorer */
+/* RESET STYLES */
+img {
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse !important;
+}
+body {
+  height: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+/* iOS BLUE LINKS */
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
 body {
   background-color: #f6f6f6;
 }
@@ -221,13 +229,13 @@ a {
     margin: 20px 0 5px !important;
   }
   h1 {
-    font-size: 30px !important;
+    font-size: 24px !important;
   }
   h2 {
     font-size: 18px !important;
   }
   h3 {
-    font-size: 16px !important;
+    font-size: 14px !important;
   }
   .container {
     padding: 0 !important;
@@ -283,9 +291,9 @@ table.responsive-table tbody tr:nth-child(odd) {
   background: #f6f6f6;
 }
 table.responsive-table tbody tr.highlight {
-  color: #f52b84;
+  font-weight: 700;
 }
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 525px) {
   table.responsive-table {
     box-shadow: none;
   }
@@ -345,7 +353,7 @@ table.responsive-table tbody tr.highlight {
   }
 }
 /* -------------------------------------
-    HEADER MAIN
+    HEADER MAIN .
 ------------------------------------- */
 .content-header {
   background-color: #FFFFFF !important;
@@ -381,41 +389,44 @@ img.logo {
   display: block;
   border-bottom: 3px solid #3a536a;
 }
-.titles-daily-indicator hr {
-  color: #3a536a !important;
-}
-.global-indicators {
+span.global-indicators {
+  position: relative;
   padding: 20px 20px 10px 20px !important;
+  display: inline-block;
+  width: 49%;
 }
-.global-indicators tr td {
-  border: none;
+span.global-indicators img.charts {
+  width: 250px;
+  padding-top: 24px;
 }
-.global-indicators h1 {
+span.global-indicators .global-indicators-title {
   color: #3a536a;
   font-weight: 700;
   text-align: left;
   padding: 0;
   margin: 0;
+  font-size: 14px;
 }
-.global-indicators p {
-  font-size: 16px !important;
-  color: #3a536a !important;
-  font-weight: 700 !important;
-  margin-bottom: 0px !important;
-  text-align: right !important;
-}
-.global-indicators .title-charts {
-  text-align: left !important;
-}
-.global-indicators span {
+span.global-indicators .global-indicators-value {
   text-align: right;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-  float: right;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
-.ico-arrow {
-  vertical-align: middle;
-  padding-left: 4px !important;
+span.global-indicators .global-indicators-change {
+  font-weight: 700;
+  font-size: 14px;
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+span.global-indicators .global-indicators-change .ico-arrow img {
+  vertical-align: text-top;
+  width: 9px;
+  height: 11px;
+  margin-top: 2px;
 }
 .set-growth {
   color: #04cc53;
@@ -423,11 +434,16 @@ img.logo {
 .set-decay {
   color: #f37870;
 }
-.in-app {
-  float: right;
-}
-.new-installs {
-  float: left;
+@media screen and (max-width: 525px) {
+  span.global-indicators {
+    padding: 20px 20px 10px 20px !important;
+    display: inline-block;
+    width: 100%;
+  }
+  span.global-indicators img.charts {
+    width: 500px;
+    padding-top: 24px;
+  }
 }
 /* -------------------------------------
     FOOTER
@@ -446,9 +462,6 @@ img.logo {
   height: 50px;
   background-color: red;
 }
-/* -------------------------------------
-    GLOBAL HEADER, FOOTER, MAIN
-------------------------------------- */
 .header {
   width: 100%;
   margin-bottom: 20px;
@@ -457,4 +470,3 @@ img.logo {
   padding: 20px;
   background-color: #FFFFFF;
 }
-/*# sourceMappingURL=styles.css.map */

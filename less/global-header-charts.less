@@ -5,7 +5,6 @@
 
 .titles-daily-indicator{
   padding:20px 20px 10px 20px;
-  //order: solid 1px;
 }
 
 .titles-daily-indicator h4{
@@ -22,53 +21,52 @@
 	border-bottom: 3px solid @dark-grey-blue;
 }
 
-.titles-daily-indicator hr{
-	color: @dark-grey-blue !important; 
-}
-
 
 // CUSTOM TABLE FOR RECEIVE CHARTS
 
-
-.global-indicators{
+span.global-indicators {
+	position: relative;
 	padding:20px 20px 10px 20px !important;
-	//border-collapse: collapse;
+	display: inline-block;
+	width: 49%;
+}
+span.global-indicators img.charts{
+	width: 250px;
+	padding-top: 24px;
 }
 
-.global-indicators tr td{
-	//border: solid 1px;
-	border: none;
-}
-
-.global-indicators h1{
+span.global-indicators .global-indicators-title {
 	color: @dark-grey-blue;
 	font-weight: @font-bold-weight;
 	text-align: left;
 	padding: 0;
 	margin:0;
+	font-size: @font-size-small;
 }
 
-.global-indicators p{
-	font-size: @font-size-medium !important;
-	color: @dark-grey-blue !important;
-	font-weight: @font-bold-weight !important;
-	margin-bottom: 0px !important;
-	text-align: right !important;
-}
-
-.global-indicators .title-charts{
-	text-align: left !important;
-}
-
-.global-indicators span{
+span.global-indicators .global-indicators-value{
 	text-align: right;
-	font-size: @font-size-medium;
+	font-size: @font-size-small;
 	font-weight: @font-bold-weight;
-	float: right;
+	position: absolute;
+	right: 20px;
+	top: 20px;
 }
-.ico-arrow{
-	vertical-align: middle;
-	padding-left: 4px !important; 
+
+
+span.global-indicators .global-indicators-change{
+	font-weight: @font-bold-weight;
+	font-size: @font-size-small;
+	position: absolute;
+	top:40px;
+	right: 20px;
+}
+
+span.global-indicators .global-indicators-change .ico-arrow img{
+	vertical-align: text-top;
+	width: 9px;
+	height: 11px;
+	margin-top: 2px;
 }
 
 .set-growth{
@@ -78,16 +76,21 @@
 	color: @not-good-red;
 }
 
-.in-app{
-	float: right;
+
+
+@media screen and (max-width: 525px) {
+
+	span.global-indicators {
+		padding:20px 20px 10px 20px !important;
+		display: inline-block;
+		width: 100%;
+	}
+	span.global-indicators img.charts{
+		width: 500px;
+		padding-top: 24px;
+	}
+
 }
-.new-installs{
-	float: left;
-}
-
-
-
-
 
 
 

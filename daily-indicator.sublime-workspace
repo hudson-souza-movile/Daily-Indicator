@@ -144,21 +144,24 @@
 	},
 	"file_history":
 	[
+		"/Users/elcardoson/Movile/Daily-Indicator/app/index.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/main-header.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/gulpfile.js",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/inlined/index.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/styles.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/index_.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/fonts.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/global-header-charts.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/general-structure.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/variables.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/app/index.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/index_noinline.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/responsive-mobile.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/tables.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/links-buttons.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/styles.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/footer.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/main-header.less",
 		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/stats.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/typography.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/body-container.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/gulpfile.js",
 		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kiwi-adm-theme.less",
 		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-variables.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/global-config.less",
@@ -167,7 +170,6 @@
 		"/Users/elcardoson/Movile/Daily-Indicator/app/styles/styles.css",
 		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-footer.less",
 		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-fonts.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/fonts.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/styles/fonts.css",
 		"/Users/elcardoson/Movile/kiwi-manager-ui/gulpfile.js",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/appdi-styles.less",
@@ -198,7 +200,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			"*.less"
@@ -209,6 +211,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"font-size:16px",
+			"14px",
+			"font-size:16px",
+			"responsive-table",
+			"responsive",
+			"{\n",
+			"http://www.cardoso.cc/movile/fonts/font-face/",
+			"http://www.cardoso.cc/movile/fonts/",
+			"http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts",
+			"text-align:left;",
+			"organization-position",
 			"16px",
 			"hr",
 			"align-right",
@@ -237,6 +250,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"font-size:14px",
+			"http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/font-face/",
+			"\nhttp://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts/",
+			"\nhttp://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/fonts",
 			"important",
 			"value-data-di",
 			"organization-name",
