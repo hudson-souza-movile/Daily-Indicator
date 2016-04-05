@@ -19,6 +19,11 @@ gulp.task('html', function () {
     .pipe(connect.reload());
 });
 
+gulp.task('html', function () {
+  gulp.src('./app/general-apps/*.html')
+    .pipe(connect.reload());
+});
+
 
 gulp.task('css', function () {
   gulp.src('./app/styles/*.css')
@@ -38,6 +43,7 @@ gulp.task('less', function () {
  
 gulp.task('watch', function () {
   gulp.watch(['./app/*.html'], ['html']);
+  gulp.watch(['./app/general-apps/*.html'], ['html']);
   gulp.watch(['./app/styles/*.css'], ['css']);
   gulp.watch(['./less/**/*.less'], ['less']);
 });

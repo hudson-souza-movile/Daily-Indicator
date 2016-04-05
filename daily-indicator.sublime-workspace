@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
 				"pad",
 				"padding-top"
 			],
@@ -17,10 +25,6 @@
 			],
 			[
 				"ma",
-				"margin-top"
-			],
-			[
-				"mar",
 				"margin-top"
 			],
 			[
@@ -38,10 +42,6 @@
 			[
 				"te",
 				"text-align"
-			],
-			[
-				"font",
-				"font-weight"
 			],
 			[
 				"ba",
@@ -153,21 +153,22 @@
 	"file_history":
 	[
 		"/Users/elcardoson/Movile/Daily-Indicator/app/index.html",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/styles.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/global-header-charts.less",
-		"/Users/elcardoson/Downloads/Slate (Responsive Email Templates) by Litmus/Newsletter/newsletter.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/index_old_bkp.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/body-container.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/variables.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/general-structure.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/main-header.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/global-header-charts.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/tables.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/styles.less",
+		"/Users/elcardoson/Downloads/Slate (Responsive Email Templates) by Litmus/Newsletter/newsletter.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/fonts.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/responsive-mobile.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/tables.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/body-container.less",
 		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-push.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/styles/styles.css",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/main-header.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/gulpfile.js",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/inlined/index.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/index_.html",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/general-structure.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/index_noinline.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/links-buttons.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/footer.less",
@@ -221,6 +222,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"decay",
+			"{{label",
+			"left",
+			"logo",
+			"img",
 			"1",
 			"font-size:16px",
 			"14px",
