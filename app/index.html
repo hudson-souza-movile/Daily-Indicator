@@ -2,16 +2,6 @@
 <html>
 <head>
 <title>Movile Daily Indicator</title>
-<!--
-
-    An email present from your friends at Litmus (@litmusapp)
-
-    Email is surprisingly hard. While this has been thoroughly tested, your mileage may vary.
-    It's highly recommended that you test using a service like Litmus (http://litmus.com) and your own devices.
-
-    Enjoy!
-
- -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -114,7 +104,7 @@
 
 <!-- HIDDEN PREHEADER TEXT -->
 <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
-    Keep informed on! Check the Movile statistics for today. #GoMovile
+    Stay informed on! Check the Movile statistics for today. #GoMovile
 </div>
 
 <!-- HEADER -->
@@ -141,7 +131,7 @@
                     <td align="left" valign="top" style="padding: 0 0 5px 0; color:#f52b84; font-size:14px; font-family: Helvetica, arial, sans-serif;">Ranking Global</td>
                 </tr>
                 <tr>
-                    <td align="left" valign="top" style="color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;">Monday, March 07, 2016 &nbsp; <b>#GoMovile</b></td>
+                    <td align="left" valign="top" style="color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;">{{date}}&nbsp; <b>#GoMovile</b></td>
                 </tr>
             </table>
             <!--[if (gte mso 9)|(IE)]>
@@ -176,14 +166,14 @@
                                 <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
                                     <tr>
                                         <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>NEW INSTALLS</b></td>
-                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>22,390,00</b></td>
+                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>{{label[0]}}</b></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" align="right" valign="top" style="color:#04CC53;font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Growth 03%</b>&nbsp;<i><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_incicator/ico-growth.png" width="10" height="12" align="middle" style="vertical-align:text-top; margin-top:1px;"></i></td>
+                                        <td colspan="2" align="right" valign="top" style="color:{{ color(label[7]) }};font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Growth {{label[1]}}%</b>&nbsp;<i><img src="{{link(label[1])}}" width="10" height="12" align="middle" style="vertical-align:text-top; margin-top:1px;"></i></td>
                                      </tr>
                                      <tr>
                                         <td colspan="2" align="center" valign="top" style="color:#3C4A60;font-size:16px; font-family: Helvetica, arial, sans-serif; padding-bottom:40px;">
-                                        <img src="http://www.cardoso.cc/movile/line-chart-new-installs.png" alt="Chart New Installs" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
+                                        <img src="{{cid[0]}}" alt="Chart New Installs" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
                                      </tr>                                      
                                 </table>
                                 <!-- END NEW INSTALLS -->
@@ -191,14 +181,14 @@
                                 <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
                                     <tr>
                                         <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>MONETIZATION</b></td>
-                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>US$ 48,738.00</b></td>
+                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>US$ {{label[2]}}</b></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" align="right" valign="top" style="color:#D44D5E;font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Decay 01%</b>&nbsp;<i><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_incicator/ico-decay.png" width="10" height="12" align="middle" style="vertical-align:text-top; margin-top:1px;"></i></td>
+                                        <td colspan="2" align="right" valign="top" style="color:{{ color(label[5]) }};font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Decay {{label[3]}}%</b>&nbsp;<i><img src="{{link(label[1])}}" width="10" height="12" align="middle" style="vertical-align:text-top; margin-top:1px;" alt="icon"></i></td>
                                      </tr>
                                      <tr>
                                         <td colspan="2" align="center" valign="top" style="color:#3C4A60;font-size:16px; font-family: Helvetica, arial, sans-serif; padding-bottom:40px;">
-                                        <img src="http://www.cardoso.cc/movile/line-chart-new-installs.png" alt="Chart New Installs" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
+                                        <img src="{{cid[1]}}" alt="Chart Monetization" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
                                      </tr>                                      
                                 </table>
                                 <!-- END MONETIZATION -->
@@ -207,14 +197,14 @@
                                 <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
                                     <tr>
                                         <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>DAILY ACTIVE USERS</b></td>
-                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>33,738.00</b></td>
+                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>{{label[4]}}</b></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" align="right" valign="top" style="color:#D44D5E;font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Decay 01%</b>&nbsp;<i><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_incicator/ico-decay.png" width="10" height="12" align="middle" style="vertical-align:text-top; margin-top:1px;"></i></td>
+                                        <td colspan="2" align="right" valign="top" style="color:{{ color(label[5]) }};font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Decay {{label[5]}}%</b>&nbsp;<i><img src="{{link(label[5])}}" width="10" height="12" align="middle" style="vertical-align:text-top; margin-top:1px;"></i></td>
                                      </tr>
                                      <tr>
                                         <td colspan="2" align="center" valign="top" style="color:#3C4A60;font-size:16px; font-family: Helvetica, arial, sans-serif; padding-bottom:40px;">
-                                        <img src="http://www.cardoso.cc/movile/line-chart-new-installs.png" alt="Chart New Installs" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
+                                        <img src="{{cid[2]}}" alt="Chart DAU" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
                                      </tr>                                      
                                 </table>
                                 <!-- END DAU -->
@@ -222,14 +212,14 @@
                                 <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
                                     <tr>
                                         <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>MONTHLY ACTIVE USERS</b></td>
-                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>33,738.00</b></td>
+                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>{{label[6]}}</b></td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" align="right" valign="top" style="color:#04CC53;font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Growth 01%</b>&nbsp;<i><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_incicator/ico-growth.png" width="10" height="12" align="middle" style="vertical-align:text-top; margin-top:1px;"></i></td>
+                                        <td colspan="2" align="right" valign="top" style="color:{{ color(label[7]) }};font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Growth 01%</b>&nbsp;<i><img src="{{link(label[5])}}" width="10" height="12" align="middle" style="vertical-align:text-top; margin-top:1px;"></i></td>
                                      </tr>
                                      <tr>
                                         <td colspan="2" align="center" valign="top" style="color:#3C4A60;font-size:16px; font-family: Helvetica, arial, sans-serif; padding-bottom:10px;">
-                                        <img src="http://www.cardoso.cc/movile/line-chart-new-installs.png" alt="Chart New Installs" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
+                                        <img src="{{cid[3]}}" alt="Chart MAU" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
                                      </tr>                                      
                                 </table>
                                 <!-- END MAU -->
@@ -278,29 +268,29 @@
                             <tbody class="zebra">
                                 <tr class="highlight">
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#1</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">iFood Android</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">148,875,99</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{mau[0].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{mau[0].value}}</td>
                                 </tr>
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#2</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids iOS</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">112,576,32</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{mau[1].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{mau[1].value}}</td>
                                 </tr>
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#3</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Be Bot</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">35,897,67</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{mau[2].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{mau[2].value}}</td>
                                 </tr>
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#4</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids Talk Android</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">875,99</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{mau[3].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{mau[3].value}}</td>
                                 </tr>
 
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#5</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Movile Stadium iOS</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">113,45</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{mau[4].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{mau[4].value}}</td>
                                 </tr>                                   
                             </tbody>
                         </table>
@@ -316,29 +306,29 @@
                             <tbody class="zebra">
                                 <tr class="highlight">
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#1</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">iFood Android</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">148,875,99</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{inapp[0].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{inapp[0].value}}</td>
                                 </tr>
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#2</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids iOS</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">112,576,32</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{inapp[1].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{inapp[1].value}}</td>
                                 </tr>
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#3</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Be Bot</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">35,897,67</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{inapp[2].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{inapp[2].value}}</td>
                                 </tr>
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#4</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids Talk Android</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">875,99</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{inapp[3].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{inapp[3].value}}</td>
                                 </tr>
 
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#5</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Movile Stadium iOS</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">113,45</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{inapp[4].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{inapp[4].value}}</td>
                                 </tr>                                   
                             </tbody>
                         </table>
@@ -359,29 +349,29 @@
                             <tbody class="zebra">
                                 <tr class="highlight">
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#1</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">iFood Android</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">148,875,99</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{install[0].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{install[0].value}}</td>
                                 </tr>
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#2</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids iOS</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">112,576,32</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{install[1].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{install[1].value}}</td>
                                 </tr>
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#3</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Be Bot</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">35,897,67</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{install[2].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{install[2].value}}</td>
                                 </tr>
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#4</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids Talk Android</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">875,99</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{install[3].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{install[3].value}}</td>
                                 </tr>
 
                                 <tr>
                                     <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#5</td>
-                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Movile Stadium iOS</td>
-                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">113,45</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">{{install[4].name}}</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">{{install[4].value}}</td>
                                 </tr>                                   
                             </tbody>
                         </table>
@@ -444,3 +434,4 @@
 </div>
 </body>
 </html>
+<!-- #GoMovile -->
