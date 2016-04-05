@@ -152,12 +152,15 @@
 	},
 	"file_history":
 	[
+		"/Users/elcardoson/Movile/Daily-Indicator/less/variables.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/main-header.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/Bkps/index_old_bkp_first-version-diego.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/index.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/general-apps/index.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/gulpfile.js",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/index_old_bkp.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/body-container.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/variables.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/general-structure.less",
-		"/Users/elcardoson/Movile/Daily-Indicator/less/main-header.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/global-header-charts.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/tables.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/styles.less",
@@ -166,7 +169,6 @@
 		"/Users/elcardoson/Movile/Daily-Indicator/less/responsive-mobile.less",
 		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-push.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/styles/styles.css",
-		"/Users/elcardoson/Movile/Daily-Indicator/gulpfile.js",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/inlined/index.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/index_.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/index_noinline.html",
@@ -222,6 +224,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"index",
+			"padding",
 			"decay",
 			"{{label",
 			"left",
@@ -327,7 +331,7 @@
 		"cols":
 		[
 			0.0,
-			0.894378582595,
+			0.970725995316,
 			1.0
 		],
 		"rows":

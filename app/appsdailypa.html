@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Movile Daily Indicator</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    body, table, td, a{-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;} /* Prevent WebKit and Windows mobile changing default text sizes */
+    table, td{mso-table-lspace: 0pt; mso-table-rspace: 0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+    img{-ms-interpolation-mode: bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+    /* RESET STYLES */
+    img{border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none;}
+    table{border-collapse: collapse !important; background-color: #FFFFFF;}
+    body{height: 100% !important; margin: 0 auto !important; padding: 0 !important; width: 100% !important; background-color:#F5F7FA !important;}
+
+    /* iOS BLUE LINKS */
+    a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+    }
+
+    tbody.zebra tr:nth-child(odd) {
+       background-color: #F6F6F6;
+    }
+
+    /* MOBILE STYLES */
+    @media screen and (max-width: 525px) {
+
+        /* ALLOWS FOR FLUID TABLES */
+        .wrapper {
+          width: 100% !important;
+          max-width: 100% !important;
+        }
+
+        .media-titles{
+            font-size: 18px !important;
+        }
+
+        /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+        .mobile-hide {
+          display: none !important;
+        }
+
+        .img-max {
+          max-width: 100% !important;
+          width: 100% !important;
+          height: auto !important;
+        }
+
+        /* FULL-WIDTH TABLES */
+        .responsive-table {
+          width: 100% !important;
+        }
+
+        /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+        .padding {
+          padding: 10px 5% 15px 5% !important;
+        }
+
+        .padding-meta {
+          padding: 30px 5% 0px 5% !important;
+          text-align: center;
+        }
+
+        .no-padding {
+          padding: 0 !important;
+        }
+
+        .section-padding {
+          padding: 50px 15px 50px 15px !important;
+        }
+
+        /* ADJUST BUTTONS ON MOBILE */
+        .mobile-button-container {
+            margin: 0 auto;
+            width: 100% !important;
+        }
+
+        .mobile-button {
+            padding: 15px !important;
+            border: 0 !important;
+            font-size: 16px !important;
+            display: block !important;
+        }
+
+    }
+
+    /* ANDROID CENTER FIX */
+    div[style*="margin: 16px 0;"] { margin: 0 !important; }
+</style>
+</head>
+<body style="margin: 0 auto !important; padding: 0 !important; background-color:#F5F7FA !important;">
+
+<!-- HIDDEN PREHEADER TEXT -->
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">
+    Stay informed on! Check the Movile statistics for today. #GoMovile
+</div>
+
+<!-- HEADER -->
+<div style="max-width:620px !important; margin:0 auto !important; padding:30px 0 50px 0 !important;">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF">
+    <tr>
+        <td bgcolor="#FFFFFF" align="center" style="border-top: 3px solid #3A536A;">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 580px;" class="wrapper">
+
+                <tr>
+                    <td align="left" valign="top" style="padding: 25px 0 5px 0; color:#f52b84; font-size:20px; font-family: Helvetica, arial, sans-serif;">
+                        <a href="http://movile.com" target="_blank" style="float:right;">
+                        <img alt="Logo" src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/logo_movile.png" width="96" height="26" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #ffffff; font-size: 16px;" border="0" class="logo">
+                        </a> 
+                        <b>Apps Daily Indicator</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top" style="padding: 0 0 5px 0; color:#f52b84; font-size:14px; font-family: Helvetica, arial, sans-serif;">Global Ranking</td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top" style="color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;">Tuesday, April 05, 2016&nbsp; <b>#GoMovile</b></td>
+          </tr>
+            </table>
+                        <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 580px;" class="wrapper">
+                <tr>
+                    <td align="left" valign="top" style=" padding: 50px 0 5px 0; color:#3C4A60;font-size:16px; font-family: Helvetica, arial, sans-serif;"><b>Movile Global</b></td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Last 30 Days</td>
+                </tr>
+                 <tr>
+                    <td><hr height="1" style="height:1px; border:0 none; color: #B5C1CC; background-color: #B5C1CC;"></td>
+                </tr>                               
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 30px 0 70px 0;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width: 580px;" class="responsive-table">
+                        <tr>
+                            <td>
+                                <!-- NEW INSTALLS -->
+                                <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
+                                    <tr>
+                                        <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>New Installs</b></td>
+                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>4,049,394</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="right" valign="top" style="color:#f37870;font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Decay -0.1%</b>&nbsp;<i><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/ico-decay.png" width="10" height="12" align="middle" style="vertical-align:text-top; margin-top:1px;"></i></td>
+                                     </tr>
+                                     <tr>
+                                        <td colspan="2" align="center" valign="top" style="color:#3C4A60;font-size:16px; font-family: Helvetica, arial, sans-serif; padding-bottom:40px;">
+                                        <img src="https://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/120160405.png" alt="Chart New Installs" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
+                                     </tr>                                      
+                                </table>
+                                <!-- END NEW INSTALLS -->
+                                <!-- MONETIZATION -->
+                                <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
+                                    <tr>
+                                        <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>Monetization</b></td>
+                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>US$ 307,633.38</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="right" valign="top" style="color:#f37870;font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Decay -0.4%</b>&nbsp;<i><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/ico-decay.png" width="10" height="12" align="middle" style="vertical-align:text-top; margin-top:1px;" alt="icon"></i></td>
+                                     </tr>
+                                     <tr>
+                                        <td colspan="2" align="center" valign="top" style="color:#3C4A60;font-size:16px; font-family: Helvetica, arial, sans-serif; padding-bottom:40px;">
+                                        <img src="https://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/220160405.png" alt="Chart Monetization" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
+                                     </tr>                                      
+                                </table>
+                                <!-- END MONETIZATION -->
+
+                                <!-- INIT DAU -->
+                                <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
+                                    <tr>
+                                        <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>Daily Active Users</b></td>
+                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>801,366</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="right" valign="top" style="color:#f37870;font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Decay -0.1%</b>&nbsp;<i><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/ico-decay.png" width="10" height="12" align="middle" style="vertical-align:text-top; margin-top:1px;"></i></td>
+                                     </tr>
+                                     <tr>
+                                        <td colspan="2" align="center" valign="top" style="color:#3C4A60;font-size:16px; font-family: Helvetica, arial, sans-serif; padding-bottom:40px;">
+                                        <img src="https://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/320160405.png" alt="Chart DAU" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
+                                     </tr>                                      
+                                </table>
+                                <!-- END DAU -->
+                                <!-- INIT MAU -->
+                                <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center">
+                                    <tr>
+                                        <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>Monthly Active Users</b></td>
+                                        <td align="right" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>7,851,520</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="right" valign="top" style="color:#B6C1CB;font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>No change 0.0%</b>&nbsp;<i><img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/ico-nochange.png" width="10" height="12"  align="middle" style="vertical-align:text-top; margin-top:1px;"></i></td>
+                                     </tr>
+                                     <tr>
+                                        <td colspan="2" align="center" valign="top" style="color:#3C4A60;font-size:16px; font-family: Helvetica, arial, sans-serif; padding-bottom:10px;">
+                                        <img src="https://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/420160405.png" alt="Chart MAU" style="width:100% !important; height: auto !important; max-width:580px !important;"></td>
+                                     </tr>                                      
+                                </table>
+                                <!-- END MAU -->
+
+                            </td>
+                        </tr>
+                    </table>   
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#FFFFFF" align="center" style="padding: 05px 15px 70px 15px;" class="section-padding">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="580">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 580px;" class="wrapper">
+                <tr>
+                    <td align="left" valign="top" style=" padding: 0 0 5px 0; color:#3C4A60;font-size:16px; font-family: Helvetica, arial, sans-serif;"><b>Top 5 Apps</b></td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Last 7 Days</td>
+                </tr>
+                 <tr>
+                    <td><hr height="1" style="height:1px; border:0 none; color: #B5C1CC; background-color: #B5C1CC;"></td>
+                </tr>                               
+            </table>
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 580px;" class="responsive-table">
+                <tr>
+                    <td>
+                        <!-- RANKING MAU -->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 580px; width: 100%; border-collapse: collapse;" class="responsive-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" align="left" style="height:80px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>Monthly Active Users</b></th>
+                                    <th colspan="2" align="right" style="color:#3C4A60; font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>Total</b></th>
+                                </tr>
+                            </thead>
+                            <tbody class="zebra">
+                                <tr  style="background-color: #F6F6F6;" >
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#1</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids - Android</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">2,077,782</td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#2</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids - iOS</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">1,709,107</td>
+                                </tr>
+                                <tr style="background-color: #F6F6F6;" >
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#3</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">IdeiasKids BR</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">642,576</td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#4</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Superplayer Android</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">556,724</td>
+                                </tr>
+
+                                <tr style="background-color: #F6F6F6;" >
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#5</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">IdeiasKids CO</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">496,303</td>
+                                </tr>                                   
+                            </tbody>
+                        </table>
+
+                        <!-- RANKING MONETIZATION -->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 580px; width: 100%; border-collapse: collapse;" class="layout display responsive-table ranking-tables">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" align="left" style="height:80px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>Monetization</b></th>
+                                    <th colspan="2" align="right" style="color:#3C4A60; font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>Total US$</b></th>
+                                </tr>
+                            </thead>
+                            <tbody class="zebra">
+                                <tr style="background-color: #F6F6F6;" >
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#1</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids - iOS</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">23,229.38</td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#2</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids - Android</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">22,984.67</td>
+                                </tr>
+                                <tr style="background-color: #F6F6F6;" >
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#3</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids Stories - iOS</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">21,535.06</td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#4</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">IdeiasKids MX</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">2,333.94</td>
+                                </tr>
+
+                                <tr style="background-color: #F6F6F6;" >
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#5</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">IdeiasKids BR</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">94.26</td>
+                                </tr>                                   
+                            </tbody>
+                        </table>
+
+                        <!-- RANKING TOTAL INSTALLS-->
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 580px; width: 100%; border-collapse: collapse;" class="layout display responsive-table ranking-tables">
+                         <!--[if (gte mso 9)|(IE)]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="580">
+                        <tr>
+                        <td align="center" valign="top" width="580">
+                        <![endif]-->
+                            <thead>
+                                <tr>
+                                    <th colspan="2" align="left" style=" height:80px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>New Installs</b></th>
+                                    <th colspan="2" align="right" style="color:#3C4A60; font-size:14px; font-family: Helvetica, arial, sans-serif;"><b>Total</b></th>
+                                </tr>
+                            </thead>
+                            <tbody class="zebra">
+                                <tr class="highlight" style="background-color: #F6F6F6;" >
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#1</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">PlayKids - Android</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">203,990</td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#2</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Vivo +apps</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">138,715</td>
+                                </tr>
+                                <tr style="background-color: #F6F6F6;" >
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#3</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Superplayer Android</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">94,732</td>
+                                </tr>
+                                <tr>
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#4</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">IdeiasKids MX</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">69,339</td>
+                                </tr>
+
+                                <tr style="background-color: #F6F6F6;" >
+                                    <td align="left" style="padding:15px 10px; color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;width:30px;padding-left:15px;">#5</td>
+                                    <td style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">IdeiasKids BR</td>
+                                    <td align="right" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif; padding-right:15px;">64,267</td>
+                                </tr>                                   
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 20px 0px;">
+            <!--[if (gte mso 9)|(IE)]>
+            <table align="center" border="0" cellspacing="0" cellpadding="0" width="500">
+            <tr>
+            <td align="center" valign="top" width="500">
+            <![endif]-->
+            <!-- UNSUBSCRIBE COPY -->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 580px;" class="responsive-table">
+                <tr>
+                    <td style="color:#3C4A60;font-size:12px; font-family: Helvetica, arial, sans-serif; padding-bottom:15px;" align="center">
+                        <hr height="1" style="height:1px; border:0 none; color: #B5C1CC; background-color: #B5C1CC;">
+                        <br>
+                        <br>
+                        You received this email because you are subscribed<br> to Movile Corporate Daily Indicator.                        
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="padding-bottom:10px;">                                     
+                        <a href="http://www.movile.com" alt="View this e-mail in browser" target="_blank" style="font-family: Helvetica, arial, sans-serif; font-size:14px; color: #F52B84; text-decoration: none;"><b>View in browser</b></a>   
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:#3C4A60;font-size:12px; font-family: Helvetica, arial, sans-serif; padding-bottom:15px;" align="center">
+                        Any problems report <b>IT Data Intelligence</b>
+                    </td>
+                </tr>                               
+                <tr>
+                    <td align="center">
+                        <img src="http://movile-di.s3.amazonaws.com/telecom/apps_daily_indicator/logo-movile-footer.png" alt="Logo Movile" width="66" height="20" alt="Movile">
+                    </td>
+                </tr>               
+            </table>
+            <!--[if (gte mso 9)|(IE)]>
+            </td>
+            </tr>
+            </table>
+            <![endif]-->
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
+<!-- #GoMovile -->
