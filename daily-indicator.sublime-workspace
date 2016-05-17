@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"margi",
+				"margin-top"
+			],
+			[
 				"mar",
 				"margin"
 			],
@@ -152,11 +156,16 @@
 	},
 	"file_history":
 	[
+		"/Users/elcardoson/Movile/Daily-Indicator/app/htmlTemplate.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/general-apps/global-data.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/general-apps/html2.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/general-apps/htmlTemplate copy.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/appsdailypa.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/general-apps/index.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/variables.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/main-header.less",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/Bkps/index_old_bkp_first-version-diego.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/index.html",
-		"/Users/elcardoson/Movile/Daily-Indicator/app/general-apps/index.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/gulpfile.js",
 		"/Users/elcardoson/Movile/Daily-Indicator/app/index_old_bkp.html",
 		"/Users/elcardoson/Movile/Daily-Indicator/less/body-container.less",
@@ -224,6 +233,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"section-padding",
+			"no-padding",
+			"padding-meta",
+			"mobile-hide",
+			"mobile-hid",
+			"media-titles",
+			"no-padding",
+			"padding-meta",
+			"padding",
+			"media-titles",
+			"mobile-hide",
 			"index",
 			"padding",
 			"decay",
