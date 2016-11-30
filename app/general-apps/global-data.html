@@ -115,7 +115,7 @@
                     <td align="left" valign="top" style=" padding: 50px 0 5px 0; color:#3C4A60;font-size:16px; font-family: Helvetica, arial, sans-serif;"><b>All Apps Data</b></td>
                 </tr>
                 <tr>
-                    <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Last 30 Days</td>
+                    <td align="left" valign="top" style="color:#3C4A60;font-size:14px; font-family: Helvetica, arial, sans-serif;">Last Day</td>
                 </tr>
                  <tr>
                     <td><hr height="1" style="height:1px; border:0 none; color: #B5C1CC; background-color: #B5C1CC;"></td>
@@ -141,16 +141,16 @@
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 580px; width: 100%; border-collapse: collapse;" class="responsive-table">
                 <thead>
                     <tr>
-                        <th align="left" style="height:30px; padding-bottom:10px;color:#3C4A60;font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>App Name</b></th>
-                        <th align="center" style="border-left: 1px solid #D9D9D9;color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Total Installs</b></th>
-                        <th align="center" style="border-left: 1px solid #D9D9D9;color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>New Installs</b></th>
-                        <th align="center" style="border-left: 1px solid #D9D9D9;color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>DAU</b></th>
+                        <th align="left" style="width: 40%; height:30px; padding-bottom:10px;color:#3C4A60;font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>App Name</b></th>
+                        <th align="center" style="max-width: 15%; border-left: 1px solid #D9D9D9;color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>Total Installs</b></th>
+                        <th align="center" style="max-width: 14%; border-left: 1px solid #D9D9D9;color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>New Installs</b></th>
+                        <th align="center" style="max-width: 9%; border-left: 1px solid #D9D9D9;color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>DAU</b></th>
                         <th align="center" style="border-left: 1px solid #D9D9D9;color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>MAU</b></th>
-                        <th align="center" style="border-left: 1px solid #D9D9D9;color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>$IN APP</b></th>
+                        <th align="center" style="border-left: 1px solid #D9D9D9;color:#3C4A60; font-size:12px; font-family: Helvetica, arial, sans-serif;"><b>US$ IN APP</b></th>
                     </tr>
                 </thead>
                 <tbody class="zebra">
-		{% for app in appsGroups[appsGroup] %}
+			{% for app in appsGroups[appsGroup] %}
                     <tr class="padding-tables" {% if appsGroups[appsGroup].index(app)%2 == 0 %} style="background-color: #F6F6F6;"  {% endif %} >
                         <td align="left" style="padding:15px 4px 10px 4px; color:#3C4A60;font-size:12px; font-family: Helvetica, arial, sans-serif;">{{ app.name }}</td>
 
@@ -162,19 +162,15 @@
 
                         <td align="center" style="padding:15px 4px 10px 4px; border-left: 1px solid #D9D9D9; color:#3C4A60;font-size:12px; font-family: Helvetica, arial, sans-serif;">{{ app.mau }}</td>
 
-                        <td align="center" style="padding:15px 4px 10px 4px; border-left: 1px solid #D9D9D9; color:#3C4A60;font-size:12px; font-family: Helvetica, arial, sans-serif; padding-right:4px;">US$ {{ app.in_app }}</td>
+                        <td align="center" style="padding:15px 4px 10px 4px; border-left: 1px solid #D9D9D9; color:#3C4A60;font-size:12px; font-family: Helvetica, arial, sans-serif; padding-right:4px;">{{ app.in_app }}</td>
                     </tr>
-		{% endfor %}
+			{% endfor %}
                 </tbody>
             </table>
 	    {% endfor %}
-            </table>
-            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 580px;" class="responsive-table">
-                <tr>
-                    <td align="center" style="padding:60px 0 40px 0;">                                     
-                        <a href="{{ linkCsv }}" alt="Download CSV" target="_blank" style="font-family: Helvetica, arial, sans-serif; font-size:14px; padding:10px; border-radius: 4px; border:solid 1px #B5C1CC; color: #788897; text-decoration: none;"><b>Download CSV</b></a>   
-                    </td>
-                </tr>
+            <!--/table>
+            <!--table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 580px;" class="responsive-table">
+               
             </table>
             <!--[if (gte mso 9)|(IE)]>
             </td>
@@ -183,6 +179,12 @@
             <![endif]-->
         </td>
     </tr>
+	
+	 <tr>
+		<td align="center" style="padding:60px 0 40px 0;">                                     
+			<a href="{{ linkCsv }}" alt="Download CSV" target="_blank" style="font-family: Helvetica, arial, sans-serif; font-size:14px; padding:10px; border-radius: 4px; border:solid 1px #B5C1CC; color: #788897; text-decoration: none;"><b>Download CSV</b></a>   
+		</td>
+	</tr>
     <tr>
         <td bgcolor="#ffffff" align="center" style="padding: 20px 0px;">
             <!--[if (gte mso 9)|(IE)]>
@@ -191,7 +193,7 @@
             <td align="center" valign="top" width="500">
             <![endif]-->
             <!-- UNSUBSCRIBE COPY -->
-            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 580px;" class="wrapper">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="max-width: 580px;" class="responsive-table">
                 <tr>
                     <td style="color:#3C4A60;font-size:12px; font-family: Helvetica, arial, sans-serif; padding-bottom:15px;" align="center" class="padding">
                         <hr height="1" style="height:1px; border:0 none; color: #B5C1CC; background-color: #B5C1CC;">
