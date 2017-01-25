@@ -15,4 +15,11 @@ Responsive Templates & CSS Inlining
 
 -
 
+Get started
+-----------
+1. clone repository
+2. npm install
+## enjoy! ##
+
+
 ![Preview](https://movile.com)
