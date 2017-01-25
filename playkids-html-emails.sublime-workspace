@@ -1,0 +1,603 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"fonte",
+				"font-size"
+			],
+			[
+				"ca",
+				"class\tAttr"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"td",
+				"td\tTag"
+			],
+			[
+				"wi",
+				"width\tAttr"
+			],
+			[
+				"backgoru",
+				"background-size"
+			],
+			[
+				"local",
+				"localhost"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"p",
+				"padding-left"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"impor",
+				"important"
+			],
+			[
+				"MAR",
+				"margin-left"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"font-ze",
+				"font-size-medium"
+			],
+			[
+				"borde",
+				"border-collapse"
+			],
+			[
+				"ta",
+				"table-ranking"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"cont",
+				"content-header"
+			],
+			[
+				"FONT",
+				"font-size"
+			],
+			[
+				"stati",
+				"staticFiles"
+			],
+			[
+				"livere",
+				"livereload"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"les",
+				"Set Syntax: LESS"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"instap",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/elcardoson/Movile/playkids-html-emails",
+		"/Users/elcardoson/Movile/playkids-html-emails/app",
+		"/Users/elcardoson/Movile/playkids-html-emails/app/onboarding-email",
+		"/Users/elcardoson/Movile/playkids-html-emails/app/onboarding-email/images"
+	],
+	"file_history":
+	[
+		"/Users/elcardoson/Movile/playkids-html-emails/app/onboarding-email/index.html",
+		"/Users/elcardoson/Movile/playkids-html-emails/app/onboarding-email/email-onboard-pk.html",
+		"/Users/elcardoson/vpchamps/vpnc.tcl",
+		"/Users/elcardoson/BoxSync/ServerAWS/elgrandcardoson.pem",
+		"/Users/elcardoson/BoxSync/Sites/WP Plugins /ultimate-member/en_US.po",
+		"/Users/elcardoson/Movile/playkids-html-emails/app/onboarding-email/vindi-onboarding-mail.html",
+		"/Users/elcardoson/Movile/playkids-html-emails/app/onboarding-email/index-vertical.html",
+		"/Users/elcardoson/Movile/playkids-html-emails/gulpfile.js",
+		"/Users/elcardoson/Movile/botland-landing-page/gulpfile.js",
+		"/Users/elcardoson/Movile/daily-Indicator/package.json",
+		"/Users/elcardoson/Movile/playkids-html-emails/app/jeenga-email-D0-welcome/index.html",
+		"/Users/elcardoson/Movile/playkids-html-emails/app/android-vindi-password-email/index.html",
+		"/Users/elcardoson/Movile/playkids-html-emails/app/android-vindi-password-email/android-vindi-pwd.html",
+		"/Users/elcardoson/github-personal/foodtruckcampinas.com/Movefile.yaml",
+		"/Users/elcardoson/dump.sql",
+		"/Users/elcardoson/github-personal/foodtruckcampinas.com/wp_foodtruckcampinas-13-12-16-locahost-bkp.sql",
+		"/Users/elcardoson/github-personal/cardoso.cc/dploy.yaml",
+		"/Users/elcardoson/github-personal/foodtruckcampinas.com/dploy.yaml",
+		"/Users/elcardoson/github-personal/wp_footruckcampinas.sql",
+		"/Users/elcardoson/github-personal/wordpress/wp-config.php",
+		"/Users/elcardoson/github-personal/cardoso.cc/app/index.html",
+		"/Users/elcardoson/github-personal/cardoso.cc/index.html",
+		"/Users/elcardoson/Movile/daily-Indicator/gulpfile.js",
+		"/Users/elcardoson/Movile/daily-Indicator/app/Playkids/alpha_campaign_price.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/views/home/admin/customer_happiness/results.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/admin/customer_happiness/user_profile.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-variables.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kiwi-with-legacy-theme.less",
+		"/Users/elcardoson/Downloads/wordpress/wp-config.php",
+		"/Users/elcardoson/Movile/Information Center/wordpress/wp-config.php",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/actions.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/settings/config.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/audience/show_audience_options.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/send.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/left_inner_menu.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/segments.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/segments/new_segment.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/settings/apns.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/settings/gcm.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/settings/general.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/audience/audience_header.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/content/actions.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/content/modal_select_action.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/content/android.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/schedule/schedule.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/content/ios.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-push.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/responsive-mobile.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/views/home/application/push/stats.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/main-header.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/links-buttons.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/global-header-charts.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/general-structure.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/footer.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/fonts.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/body-container.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/typography.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/styles.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-dashboard-styles.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-buttons.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/scripts/controllers/home/application/push.js",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-styleguide.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kiwi-adm-theme.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/i18n/en_US.json",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/bower_components/bootstrap/less/buttons.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/bower_components/bootstrap/less/button-groups.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/variables.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/index.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/tables.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/gulpfile.js",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/global-config.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/app/styles/kiwi-adm-theme.css",
+		"/Users/elcardoson/Movile/Email-Marketing-Kiwi/teste-daily-indicator.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/styles/styles.css",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-footer.less",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/less/kw-fonts.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/styles/fonts.css",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/gulpfile.js",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/appdi-styles.less",
+		"/Users/elcardoson/Movile/Daily-Indicator/package.json",
+		"/Users/elcardoson/Movile/Daily-Indicator/less/appdi-styles",
+		"/Users/elcardoson/Library/Application Support/Sublime Text 2/Packages/LESS/README.md",
+		"/Users/elcardoson/Library/Application Support/Sublime Text 2/Packages/User/LESS.sublime-settings",
+		"/Users/elcardoson/Movile/Daily-Indicator/node_modules/less/dist/less.js",
+		"/Users/elcardoson/Movile/Daily-Indicator/app/less/styles.less.css",
+		"/Users/elcardoson/Movile/Daily-Indicator/views/index.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/styles/styles.css",
+		"/Users/elcardoson/Movile/Daily-Indicator/gulpfile-express.js",
+		"/Users/elcardoson/Movile/Daily-Indicator/src/index.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/src/apps-daily-indicator-ranking.html",
+		"/Users/elcardoson/Movile/Daily-Indicator/src/daily-indicator-ranking.html",
+		"/Users/elcardoson/Movile/kiwi-manager-ui/scripts/static.js",
+		"/Users/elcardoson/Github-Plugins/transactional-email-templates/README.md",
+		"/Users/elcardoson/Movile/Daily-Indicator/src/README.md",
+		"/Users/elcardoson/Github-Plugins/transactional-email-templates/templates/billing.html",
+		"/Users/elcardoson/Github-Plugins/transactional-email-templates/templates/inlined/billing.html",
+		"/Users/elcardoson/Movile/Style-Guide-Kiwi/README.md",
+		"/Users/elcardoson/Movile/Prototype/push/index.html",
+		"/Users/elcardoson/.bash_profile"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"*.html",
+			".html",
+			"",
+			"*.less",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"center",
+			"6F1DA3",
+			"</br>",
+			"responsive-table",
+			"responsuvle",
+			"utf8mb4_unicode_520_ci",
+			"utf8mb4",
+			"src",
+			", ",
+			"box",
+			"https://open.spotify.com/track/0JMMzn3fuItMQ8oWwvJd7l",
+			"btn",
+			"buttons",
+			"26px",
+			"padding",
+			".float-menu-container",
+			"form",
+			"disabled",
+			"push-filter",
+			"panel-heading",
+			"button",
+			"#/app/2/push/actions",
+			"inner",
+			"min-width: 1300px",
+			".col-lg-10",
+			"@media (min-width: 1300px)\n.col-lg-10 {",
+			".go-back",
+			"kw-segment-filter",
+			"chosen-container",
+			".chosen-container",
+			"blue",
+			"switch",
+			".kw-button-switch",
+			"kw-button-switch",
+			"push-section-",
+			"this push will be sent",
+			"kw-adjustment",
+			"media ",
+			"android ng-scope",
+			"push-preview-android",
+			"scripts/directives/push/android_preview.html",
+			"6px",
+			"kw-fixed-floating-menu",
+			"menuItem.path",
+			"btn-group-container",
+			"ng-isolate-scope",
+			"kw-fixed-floating-menu",
+			"menuItem.label ",
+			"kw-fixed-floating-menu=\"fixed\"",
+			"style=\"width: 250px;\"",
+			"style=width: 250px;\"",
+			"style=\"width: 200px;\"",
+			"style=\"250px",
+			"stytle=\"250px\"",
+			"250px",
+			"floating-menu-container",
+			"float-menu-container",
+			"push",
+			"push buttons",
+			"push buttonz",
+			"push button",
+			"se fodeu",
+			"h3",
+			"pushAction.id ",
+			"Call to action for your push",
+			"html",
+			"warning",
+			"pushPlatform",
+			".alert-warning",
+			"rgba(0, 0, 0, 0.87)",
+			".push-section-title label",
+			".push-section-title",
+			".push-content-header",
+			"select-your-audience-push",
+			"@media (min-width: 1300px)",
+			"push-section-title",
+			"label",
+			".push-preview-android",
+			"push",
+			"push-section-title",
+			"}\n",
+			"push-section-title",
+			"<!-- uiView: leftInnerMenu -->",
+			"floating-menu-inner",
+			"leftInnerMenu",
+			"<",
+			"03cfff",
+			"last-push-sent-value",
+			".last-push-sent-title",
+			"last-push-sent-details-horizontal",
+			"last-push-sent-title",
+			"hr",
+			".last-push-sent-title",
+			"last-push-sent-details-horizontal",
+			".last-push-sent-details",
+			".btn-default",
+			"btn-default",
+			"darken",
+			"e6e6e6",
+			"btn",
+			"hover",
+			"new",
+			"t",
+			"valua-data-di",
+			"organisationname",
+			"organisationnumber",
+			"action",
+			"header-global",
+			"hr",
+			"url-font-path",
+			"url-server-assets",
+			"url-font-path",
+			"url",
+			"kw",
+			"lrport",
+			"imagemin",
+			"connect",
+			"plugins",
+			"staticFiles",
+			"root"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<br>",
+			"utf8_unicode_ci",
+			"important",
+			"value-data-di",
+			"organization-name",
+			"organization-position",
+			"value-data-di",
+			"titles-daily-indicator",
+			"url-server-fonts",
+			"url-server-assets"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "playkids-html-emails.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"en_u",
+				"app/i18n/en_US.json"
+			],
+			[
+				"push.j",
+				"app/scripts/controllers/home/application/push.js"
+			],
+			[
+				"less",
+				"node_modules/less/dist/less.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 303.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

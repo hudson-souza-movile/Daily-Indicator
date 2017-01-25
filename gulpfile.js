@@ -39,25 +39,25 @@ gulp.task('less', function () {
     .pipe(gulp.dest('./app/styles'));
 });
 
-// pelica 
+// PK 
 
 gulp.task('html', function () {
-  gulp.src('./app/pecunia-raw/*.html')
+  gulp.src('./app/playkids/*.html')
     .pipe(connect.reload());
 });
 
 gulp.task('html', function () {
-  gulp.src('./app/pecunia-raw/*.html')
+  gulp.src('./app/playkids/*.html')
     .pipe(connect.reload());
 });
 
 
 gulp.task('css', function () {
-  gulp.src('./app/pecunia-raw/css/*.css')
+  gulp.src('./app/playkids/css/*.css')
     .pipe(connect.reload());
 });
 
-// end pelica
+// end PK
 
  
 gulp.task('watch', function () {
@@ -65,9 +65,7 @@ gulp.task('watch', function () {
   gulp.watch(['./app/general-apps/*.html'], ['html']);
   gulp.watch(['./app/styles/*.css'], ['css']);
   gulp.watch(['./less/**/*.less'], ['less']);
-  gulp.watch(['./app/pecunia-raw/*.html'], ['html']); //pelica
-  gulp.watch(['./app/pecunia-raw/css/*.css'], ['css']); //pelica
-
+  gulp.watch(['./app/playkids/*.html'], ['html']);
 });
  
 gulp.task('default', ['connect', 'watch']);
